@@ -1,0 +1,3284 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
+    <title>parsing_steps - &#1055;&#1086;&#1096;&#1091;&#1082; Google</title>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        document.documentElement.addEventListener("submit", function(b) {
+          var a;
+          if (a = b.target) {
+            var c = a.getAttribute("data-submitfalse");
+            a = "1" === c || "q" === c && !a.elements.q.value ? !0 : !1
+          } else a = !1;
+          a && (b.preventDefault(), b.stopPropagation())
+        }, !0);
+        document.documentElement.addEventListener("click", function(b) {
+          var a;
+          a: {
+            for (a = b.target; a && a !== document.documentElement; a = a.parentElement)
+              if ("A" === a.tagName) {
+                a = "1" === a.getAttribute("data-nohref");
+                break a
+              } a = !1
+          }
+          a && b.preventDefault()
+        }, !0);
+      }).call(this);
+      (function() {
+        var a = window.performance;
+        window.start = Date.now();
+        a: {
+          var b = window;
+          if (a) {
+            var c = a.timing;
+            if (c) {
+              var d = c.navigationStart,
+                f = c.responseStart;
+              if (f > d && f <= window.start) {
+                window.start = f;
+                b.wsrt = f - d;
+                break a
+              }
+            }
+            a.now && (b.wsrt = Math.floor(a.now()))
+          }
+        }
+        window.google = window.google || {};
+        var h = function(g) {
+          g && g.target.setAttribute("data-iml", String(Date.now()))
+        };
+        document.documentElement.addEventListener("load", h, !0);
+        google.rglh = function() {
+          document.documentElement.removeEventListener("load", h, !0)
+        };
+      }).call(this);
+      (function() {
+        window._skwEvts = [];
+      })();
+      (function() {
+        window.google.erd = {
+          jsr: 1,
+          bv: 1789,
+          de: true
+        };
+      })();
+      (function() {
+        var sdo = false;
+        var mei = 10;
+        var h = this || self;
+        var k, l = null != (k = h.mei) ? k : 1,
+          n, p = null != (n = h.sdo) ? n : !0,
+          q = 0,
+          r, t = google.erd,
+          v = t.jsr;
+        google.ml = function(a, b, d, m, e) {
+          e = void 0 === e ? 2 : e;
+          b && (r = a && a.message);
+          if (google.dl) return google.dl(a, e, d), null;
+          if (0 > v) {
+            window.console && console.error(a, d);
+            if (-2 === v) throw a;
+            b = !1
+          } else b = !a || !a.message || "Error loading script" === a.message || q >= l && !m ? !1 : !0;
+          if (!b) return null;
+          q++;
+          d = d || {};
+          b = encodeURIComponent;
+          var c = "/gen_204?atyp=i&ei=" + b(google.kEI);
+          google.kEXPI && (c += "&jexpid=" + b(google.kEXPI));
+          c += "&srcpg=" + b(google.sn) + "&jsr=" + b(t.jsr) + "&bver=" + b(t.bv);
+          var f = a.lineNumber;
+          void 0 !== f && (c += "&line=" + f);
+          var g = a.fileName;
+          g && (0 < g.indexOf("-extension:/") && (e = 3), c += "&script=" + b(g), f && g === window.location.href && (f = document.documentElement.outerHTML.split("\n")[f], c += "&cad=" + b(f ? f.substring(0, 300) : "No script found.")));
+          c += "&jsel=" + e;
+          for (var u in d) c += "&", c += b(u), c += "=", c += b(d[u]);
+          c = c + "&emsg=" + b(a.name + ": " + a.message);
+          c = c + "&jsst=" + b(a.stack || "N/A");
+          12288 <= c.length && (c = c.substr(0, 12288));
+          a = c;
+          m || google.log(0, "", a);
+          return a
+        };
+        window.onerror = function(a, b, d, m, e) {
+          r !== a && (a = e instanceof Error ? e : Error(a), void 0 === d || "lineNumber" in a || (a.lineNumber = d), void 0 === b || "fileName" in a || (a.fileName = b), google.ml(a, !1, void 0, !1, "SyntaxError" === a.name || "SyntaxError" === a.message.substring(0, 11) || -1 !== a.message.indexOf("Script error") ? 3 : 0));
+          r = null;
+          p && q >= l && (window.onerror = null)
+        };
+      })();
+      (function() {
+        var c = [],
+          e = 0;
+        window.ping = function(b) {
+          -1 == b.indexOf("&zx") && (b += "&zx=" + Date.now());
+          var a = new Image,
+            d = e++;
+          c[d] = a;
+          a.onerror = a.onload = a.onabort = function() {
+            delete c[d]
+          };
+          a.src = b
+        };
+      }).call(this);
+    </script>
+    <style>
+      a {
+        color: #1a0dab;
+        text-decoration: none;
+        tap-highlight-color: rgba(0, 0, 0, .10)
+      }
+
+      a:visited {
+        color: #4b11a8
+      }
+
+      a:hover {
+        text-decoration: underline
+      }
+
+      img {
+        border: 0
+      }
+
+      html {
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        text-size-adjust: 100%;
+        color: #3c4043;
+        word-wrap: break-word;
+        background-color: #fff
+      }
+
+      .bRsWnc {
+        background-color: #fff;
+        border-top: 1px solid #dadce0;
+        height: 39px;
+        overflow: hidden
+      }
+
+      .N6RWV {
+        height: 51px;
+        overflow-scrolling: touch;
+        overflow-x: auto;
+        overflow-y: hidden
+      }
+
+      .Uv67qb {
+        box-pack: justify;
+        font-size: 12px;
+        line-height: 37px;
+        justify-content: space-between;
+        justify-content: space-between
+      }
+
+      .Uv67qb a,
+      .Uv67qb span {
+        color: #70757a;
+        display: block;
+        flex: none;
+        padding: 0 16px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      span.OXXup {
+        border-bottom: 2px solid #4285f4;
+        color: #4285f4;
+        font-weight: bold
+      }
+
+      a.eZt8xd:visited {
+        color: #70757a
+      }
+
+      .FElbsf {
+        border-left: 1px solid rgba(0, 0, 0, .12)
+      }
+
+      header article {
+        overflow: visible
+      }
+
+      .Pg70bf {
+        height: 39px;
+        display: box;
+        display: flex;
+        display: flex;
+        width: 100%
+      }
+
+      .H0PQec {
+        position: relative;
+        flex: 1
+      }
+
+      .sbc {
+        display: flex;
+        width: 100%
+      }
+
+      .Pg70bf input {
+        margin: 2px 4px 2px 8px;
+      }
+
+      .x {
+        width: 26px;
+        color: #70757a;
+        font: 27px/38px arial, sans-serif;
+        line-height: 40px;
+      }
+
+      #qdClwb {
+        flex: 0 0 auto;
+        width: 39px;
+        height: 39px;
+        border-bottom: 0;
+        padding: 0;
+        border-top-right-radius: 8px;
+        background-color: #1a73e8;
+        border: 1px solid #1a73e8;
+        background-image: url(data:image/gif;base64,R0lGODdhJAAjAPIHAODr/nCk+MPZ/FmV96zK+/7+/5K5+kqL9iwAAAAAJAAjAEADani63P4wykmbKcQRXDscQAEMXmmeaLQVLCukzyC09AjfeK7v/MAajACLhPMVAgwjsUcEiZa8xgAYrVqv2Kx2iwsIAAABknfBBAKrTE4IcMyot8ur8datqIbQfJdnAfo2WE6BV05wXIiJigkAOw==);
+      }
+
+      .sc {
+        font-size: 16px;
+        position: absolute;
+        top: 39px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        z-index: 2;
+        background-color: #fff
+      }
+
+      .sc>div {
+        padding: 10px 10px;
+        padding-left: 16px;
+        padding-left: 14px;
+        border-top: 1px solid #dfe1e5;
+      }
+
+      .scs {
+        background-color: #fafafa;
+      }
+
+      .noHIxc {
+        display: block;
+        font-size: 16px;
+        padding: 0 0 0 8px;
+        flex: 1;
+        height: 35px;
+        outline: none;
+        border: none;
+        width: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        overflow: hidden;
+      }
+
+      .sbc input[type=text] {
+        background: none
+      }
+
+      .bz1lBb {
+        background-color: #fff;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 0 0 1px #dfe1e5;
+        margin-top: 24px;
+      }
+
+      .KP7LCb {
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0px 1px 0px 1px #dfe1e5;
+        margin-bottom: 30px;
+        overflow: hidden
+      }
+
+      html {
+        background-color: #fff
+      }
+
+      body {
+        margin: 0 auto 0 156px;
+        max-width: 652px;
+        min-width: 652px;
+        padding: 0 8px
+      }
+
+      .cOl4Id {
+        letter-spacing: -1px;
+        text-align: center;
+        font: 22pt Futura, Arial, sans-serif;
+        height: 37px;
+        font-smoothing: antialiased;
+        padding: 32px 28px 0 24px;
+        position: absolute;
+        left: 0;
+        top: 0
+      }
+
+      .cOl4Id span {
+        display: inline-block
+      }
+
+      .V6gwVd {
+        color: #4285f4
+      }
+
+      .iWkuvd {
+        color: #ea4335
+      }
+
+      .cDrQ7 {
+        color: #fcc934
+      }
+
+      .ntlR9 {
+        color: #34a853
+      }
+
+      .tJ3Myc {
+        -webkit-transform: rotate(-20deg);
+        position: relative;
+        left: -1px;
+        display: inline-block
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 18px
+      }
+
+      footer a,
+      footer a:visited,
+      .smiUbb {
+        color: #70757a
+      }
+
+      .xeDNfc {
+        margin: 0 13px;
+        white-space: nowrap
+      }
+
+      #EOlPnc {
+        margin-top: 36px
+      }
+
+      #EOlPnc>div {
+        margin: 20px
+      }
+
+      .Srfpq {
+        color: #70757a
+      }
+    </style>
+  </head>
+  <body jsmodel="hspDDf">
+    <header id="hdr">
+      <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+        (function() {
+          var k = this || self,
+            l = function(a) {
+              var b = typeof a;
+              return "object" == b && null != a || "function" == b
+            },
+            m = function(a, b) {
+              function c() {}
+              c.prototype = b.prototype;
+              a.j = b.prototype;
+              a.prototype = new c;
+              a.prototype.constructor = a;
+              a.l = function(d, e, f) {
+                for (var g = Array(arguments.length - 2), h = 2; h < arguments.length; h++) g[h - 2] = arguments[h];
+                return b.prototype[e].apply(d, g)
+              }
+            };
+          var n = Array.prototype.indexOf ? function(a, b) {
+            return Array.prototype.indexOf.call(a, b, void 0)
+          } : function(a, b) {
+            if ("string" === typeof a) return "string" !== typeof b || 1 != b.length ? -1 : a.indexOf(b, 0);
+            for (var c = 0; c < a.length; c++)
+              if (c in a && a[c] === b) return c;
+            return -1
+          };
+          var p = function(a) {
+              return "string" == typeof a.className ? a.className : a.getAttribute && a.getAttribute("class") || ""
+            },
+            q = function(a, b) {
+              "string" == typeof a.className ? a.className = b : a.setAttribute && a.setAttribute("class", b)
+            },
+            r = function(a, b) {
+              a.classList ? b = a.classList.contains(b) : (a = a.classList ? a.classList : p(a).match(/\S+/g) || [], b = 0 <= n(a, b));
+              return b
+            },
+            v = function() {
+              var a = t,
+                b = u;
+              a.classList ? a.classList.remove(b) : r(a, b) && q(a, Array.prototype.filter.call(a.classList ? a.classList : p(a).match(/\S+/g) || [], function(c) {
+                return c != b
+              }).join(" "))
+            };
+
+          function w() {
+            var a = k.navigator;
+            return a && (a = a.userAgent) ? a : ""
+          };
+          var x = function(a) {
+            x[" "](a);
+            return a
+          };
+          x[" "] = function() {};
+          var y = -1 != w().indexOf("Gecko") && !(-1 != w().toLowerCase().indexOf("webkit") && -1 == w().indexOf("Edge")) && !(-1 != w().indexOf("Trident") || -1 != w().indexOf("MSIE")) && -1 == w().indexOf("Edge");
+          var z = function(a, b) {
+            this.type = a;
+            this.target = b
+          };
+          z.prototype.g = function() {};
+          var A = function() {
+            if (!k.addEventListener || !Object.defineProperty) return !1;
+            var a = !1,
+              b = Object.defineProperty({}, "passive", {
+                get: function() {
+                  a = !0
+                }
+              });
+            try {
+              var c = function() {};
+              k.addEventListener("test", c, b);
+              k.removeEventListener("test", c, b)
+            } catch (d) {}
+            return a
+          }();
+          var C = function(a) {
+            z.call(this, a ? a.type : "");
+            this.relatedTarget = this.target = null;
+            this.button = this.screenY = this.screenX = this.clientY = this.clientX = 0;
+            this.key = "";
+            this.keyCode = 0;
+            this.metaKey = this.shiftKey = this.altKey = this.ctrlKey = !1;
+            this.state = null;
+            this.pointerId = 0;
+            this.pointerType = "";
+            this.h = null;
+            if (a) {
+              var b = this.type = a.type,
+                c = a.changedTouches && a.changedTouches.length ? a.changedTouches[0] : null;
+              this.target = a.target || a.srcElement;
+              var d = a.relatedTarget;
+              if (d) {
+                if (y) {
+                  a: {
+                    try {
+                      x(d.nodeName);
+                      var e = !0;
+                      break a
+                    } catch (f) {}
+                    e = !1
+                  }
+                  e || (d = null)
+                }
+              } else "mouseover" == b ? d = a.fromElement : "mouseout" == b && (d = a.toElement);
+              this.relatedTarget = d;
+              c ? (this.clientX = void 0 !== c.clientX ? c.clientX : c.pageX, this.clientY = void 0 !== c.clientY ? c.clientY : c.pageY, this.screenX = c.screenX || 0, this.screenY = c.screenY || 0) : (this.clientX = void 0 !== a.clientX ? a.clientX : a.pageX, this.clientY = void 0 !== a.clientY ? a.clientY : a.pageY, this.screenX = a.screenX || 0, this.screenY = a.screenY || 0);
+              this.button = a.button;
+              this.keyCode = a.keyCode || 0;
+              this.key = a.key || "";
+              this.ctrlKey = a.ctrlKey;
+              this.altKey = a.altKey;
+              this.shiftKey = a.shiftKey;
+              this.metaKey = a.metaKey;
+              this.pointerId = a.pointerId || 0;
+              this.pointerType = "string" === typeof a.pointerType ? a.pointerType : B[a.pointerType] || "";
+              this.state = a.state;
+              this.h = a;
+              a.defaultPrevented && C.j.g.call(this)
+            }
+          };
+          m(C, z);
+          var B = {
+            2: "touch",
+            3: "pen",
+            4: "mouse"
+          };
+          C.prototype.g = function() {
+            C.j.g.call(this);
+            var a = this.h;
+            a.preventDefault ? a.preventDefault() : a.returnValue = !1
+          };
+          var D = "closure_listenable_" + (1E6 * Math.random() | 0);
+          var E = 0;
+          var F = function(a, b, c, d, e) {
+              this.listener = a;
+              this.proxy = null;
+              this.src = b;
+              this.type = c;
+              this.capture = !!d;
+              this.h = e;
+              this.key = ++E;
+              this.g = this.i = !1
+            },
+            G = function(a) {
+              a.g = !0;
+              a.listener = null;
+              a.proxy = null;
+              a.src = null;
+              a.h = null
+            };
+          var H = function(a) {
+            this.src = a;
+            this.g = {};
+            this.h = 0
+          };
+          H.prototype.add = function(a, b, c, d, e) {
+            var f = a.toString();
+            a = this.g[f];
+            a || (a = this.g[f] = [], this.h++);
+            var g;
+            a: {
+              for (g = 0; g < a.length; ++g) {
+                var h = a[g];
+                if (!h.g && h.listener == b && h.capture == !!d && h.h == e) break a
+              }
+              g = -1
+            } - 1 < g ? (b = a[g], c || (b.i = !1)) : (b = new F(b, this.src, f, !!d, e), b.i = c, a.push(b));
+            return b
+          };
+          var I = "closure_lm_" + (1E6 * Math.random() | 0),
+            J = {},
+            K = 0,
+            M = function(a, b, c, d, e) {
+              if (d && d.once) return L(a, b, c, d, e);
+              if (Array.isArray(b)) {
+                for (var f = 0; f < b.length; f++) M(a, b[f], c, d, e);
+                return null
+              }
+              c = N(c);
+              return a && a[D] ? a.g(b, c, l(d) ? !!d.capture : !!d, e) : O(a, b, c, !1, d, e)
+            },
+            O = function(a, b, c, d, e, f) {
+              if (!b) throw Error("a");
+              var g = l(e) ? !!e.capture : !!e,
+                h = P(a);
+              h || (a[I] = h = new H(a));
+              c = h.add(b, c, d, g, f);
+              if (c.proxy) return c;
+              d = Q();
+              c.proxy = d;
+              d.src = a;
+              d.listener = c;
+              if (a.addEventListener) A || (e = g), void 0 === e && (e = !1), a.addEventListener(b.toString(), d, e);
+              else if (a.attachEvent) a.attachEvent(R(b.toString()), d);
+              else if (a.addListener && a.removeListener) a.addListener(d);
+              else throw Error("b");
+              K++;
+              return c
+            },
+            Q = function() {
+              var a = S,
+                b = function(c) {
+                  return a.call(b.src, b.listener, c)
+                };
+              return b
+            },
+            L = function(a, b, c, d, e) {
+              if (Array.isArray(b)) {
+                for (var f = 0; f < b.length; f++) L(a, b[f], c, d, e);
+                return null
+              }
+              c = N(c);
+              return a && a[D] ? a.h(b, c, l(d) ? !!d.capture : !!d, e) : O(a, b, c, !0, d, e)
+            },
+            T = function(a) {
+              if ("number" !== typeof a && a && !a.g) {
+                var b = a.src;
+                if (b && b[D]) b.o(a);
+                else {
+                  var c = a.type,
+                    d = a.proxy;
+                  b.removeEventListener ? b.removeEventListener(c, d, a.capture) : b.detachEvent ? b.detachEvent(R(c), d) : b.addListener && b.removeListener && b.removeListener(d);
+                  K--;
+                  if (c = P(b)) {
+                    d = a.type;
+                    if (d in c.g) {
+                      var e = c.g[d],
+                        f = n(e, a),
+                        g;
+                      (g = 0 <= f) && Array.prototype.splice.call(e, f, 1);
+                      g && (G(a), 0 == c.g[d].length && (delete c.g[d], c.h--))
+                    }
+                    0 == c.h && (c.src = null, b[I] = null)
+                  } else G(a)
+                }
+              }
+            },
+            R = function(a) {
+              return a in J ? J[a] : J[a] = "on" + a
+            },
+            S = function(a, b) {
+              if (a.g) a = !0;
+              else {
+                b = new C(b, this);
+                var c = a.listener,
+                  d = a.h || a.src;
+                a.i && T(a);
+                a = c.call(d, b)
+              }
+              return a
+            },
+            P = function(a) {
+              a = a[I];
+              return a instanceof H ? a : null
+            },
+            U = "__closure_events_fn_" + (1E9 * Math.random() >>> 0),
+            N = function(a) {
+              if ("function" === typeof a) return a;
+              a[U] || (a[U] = function(b) {
+                return a.handleEvent(b)
+              });
+              return a[U]
+            };
+          var u, t = document.documentElement,
+            V;
+
+          function W() {
+            T(V);
+            V = L(t, "mousedown", function() {
+              v();
+              X()
+            }, {
+              capture: !0
+            })
+          }
+
+          function X() {
+            T(V);
+            V = M(t, "keydown", function(a) {
+              if (9 === a.keyCode) {
+                a = t;
+                var b = u;
+                if (a.classList) a.classList.add(b);
+                else if (!r(a, b)) {
+                  var c = p(a);
+                  q(a, c + (0 < c.length ? " " + b : b))
+                }
+                W()
+              }
+            })
+          };
+          u = "zAoYTe";
+          X();
+        }).call(this);
+      </script>
+      <div class="cOl4Id"><a href="/?sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQOwgC"><span class="V6gwVd">G</span><span class="iWkuvd">o</span><span class="cDrQ7">o</span><span class="V6gwVd">g</span><span class="ntlR9">l</span><span class="iWkuvd tJ3Myc">e</span></a></div>
+      <div class="bz1lBb">
+        <form class="Pg70bf" id="sf"><input name="ie" value="ISO-8859-1" type="hidden">
+          <div class="H0PQec">
+            <div class="sbc esbc"><input class="noHIxc" value="parsing_steps" autocapitalize="none" autocomplete="off" name="q" spellcheck="false" type="text"><input name="oq" type="hidden"><input name="aqs" type="hidden">
+              <div class="x">×</div>
+              <div class="sc"></div>
+            </div>
+          </div><button id="qdClwb" type="submit"></button>
+        </form>
+      </div><noscript>
+        <meta content="0;url=/search?q=parsing_steps&amp;ie=UTF-8&amp;gbv=1&amp;sei=GFpbZKzCBr6P9u8P-vGX0As" http-equiv="refresh">
+        <style>
+          table,
+          div,
+          span,
+          p {
+            display: none
+          }
+        </style>
+        <div style="display:block">&#1053;&#1072;&#1090;&#1080;&#1089;&#1085;&#1110;&#1090;&#1100; <a href="/search?q=parsing_steps&amp;ie=UTF-8&amp;gbv=1&amp;sei=GFpbZKzCBr6P9u8P-vGX0As">&#1090;&#1091;&#1090;</a>, &#1103;&#1082;&#1097;&#1086; &#1074;&#1072;&#1089; &#1085;&#1077; &#1073;&#1091;&#1076;&#1077; &#1087;&#1077;&#1088;&#1077;&#1085;&#1072;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1086; &#1079;&#1072; &#1082;&#1110;&#1083;&#1100;&#1082;&#1072; &#1089;&#1077;&#1082;&#1091;&#1085;&#1076;.</div>
+      </noscript>
+    </header>
+    <div id="main">
+      <div>
+        <div class="KP7LCb">
+          <div class="bRsWnc">
+            <div class="N6RWV">
+              <div class="Pg70bf Uv67qb"><span class="OXXup">&#1059;&#1089;&#1110;</span><a class="eZt8xd" href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQ_AUIBigB">&#1047;&#1086;&#1073;&#1088;&#1072;&#1078;&#1077;&#1085;&#1085;&#1103;</a><a class="eZt8xd" href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnms&amp;tbm=vid&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQ_AUIBygC">&#1042;&#1110;&#1076;&#1077;&#1086;</a><a class="eZt8xd" href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnms&amp;tbm=bks&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQ_AUICCgD">&#1050;&#1085;&#1080;&#1075;&#1080;</a><a href="https://maps.google.com/maps?q=parsing+steps&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQ_AUICSgE">&#1050;&#1072;&#1088;&#1090;&#1080;</a><a href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnms&amp;tbm=nws&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQ_AUICigF">&#1053;&#1086;&#1074;&#1080;&#1085;&#1080;</a><a href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnms&amp;tbm=shop&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQ_AUICygG">&#1055;&#1086;&#1082;&#1091;&#1087;&#1082;&#1080;</a>
+                <div class="FElbsf"><a href="/advanced_search" style="white-space:nowrap" id="st-toggle" role="button">&#1030;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1087;&#1086;&#1096;&#1091;&#1082;&#1091;</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Pg70bf wEsjbd Gx5Zad xpd EtOod pkphOe" style="display:none" id="st-card">
+          <style>
+            .wEsjbd {
+              background-color: #fff;
+              height: 44px;
+              white-space: nowrap
+            }
+
+            .coPU8c {
+              height: 60px;
+              overflow-scrolling: touch;
+              overflow-x: auto;
+              overflow-y: hidden
+            }
+
+            .Xj2aue {
+              height: 44px;
+              overflow: hidden
+            }
+
+            .RnNGze {
+              margin: 11px 16px
+            }
+
+            .wEsjbd div,
+            .wEsjbd a,
+            .wEsjbd li {
+              outline-width: 0;
+              outline: none
+            }
+          </style>
+          <div class="Xj2aue">
+            <div class="coPU8c">
+              <div class="RnNGze">
+                <style>
+                  .PA9J5 {
+                    display: inline-block
+                  }
+
+                  .RXaOfd {
+                    display: inline-block;
+                    height: 22px;
+                    position: relative;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-right: 16px;
+                    padding-left: 0;
+                    line-height: 22px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color: #70757a
+                  }
+
+                  .sa1toc {
+                    background: #fff;
+                    display: none;
+                    position: absolute;
+                    border: 1px solid #dadce0;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+                    margin: 0;
+                    white-space: nowrap;
+                    z-index: 103;
+                    line-height: 17px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 0
+                  }
+
+                  .PA9J5:hover .sa1toc {
+                    display: block
+                  }
+
+                  .mGSy8d a:active,
+                  .RXaOfd:active {
+                    color: #4285f4
+                  }
+                </style>
+                <div class="PA9J5">
+                  <div class="RXaOfd" role="button" tabindex="0">
+                    <style>
+                      .TWMOUc {
+                        display: inline-block;
+                        padding-right: 14px;
+                        white-space: nowrap
+                      }
+
+                      .vQYuGf {
+                        font-weight: bold
+                      }
+
+                      .OmTIzf {
+                        border-color: #909090 transparent;
+                        border-style: solid;
+                        border-width: 4px 4px 0 4px;
+                        width: 0;
+                        height: 0;
+                        margin-left: -10px;
+                        top: 50%;
+                        margin-top: -2px;
+                        position: absolute
+                      }
+
+                      .RXaOfd:active .OmTIzf {
+                        border-color: #4285f4 transparent
+                      }
+                    </style>
+                    <div class="TWMOUc">&#1041;&#1091;&#1076;&#1100;-&#1103;&#1082;&#1086;&#1102; &#1084;&#1086;&#1074;&#1086;&#1102;</div><span class="OmTIzf"></span>
+                  </div>
+                  <ul class="sa1toc ozatM">
+                    <style>
+                      .ozatM {
+                        font-size: 12px;
+                        text-transform: uppercase
+                      }
+
+                      .ozatM .yNFsl,
+                      .ozatM li {
+                        list-style-type: none;
+                        list-style-position: outside;
+                        list-style-image: none
+                      }
+
+                      .yNFsl.SkUj4c,
+                      .yNFsl a {
+                        color: #70757a;
+                        text-decoration: none;
+                        padding: 6px 44px 6px 14px;
+                        line-height: 17px;
+                        display: block
+                      }
+
+                      .SkUj4c {
+                        background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark2.png);
+                        background-position: right center;
+                        background-repeat: no-repeat
+                      }
+
+                      .SkUj4c:active {
+                        background-color: #f8f9fa
+                      }
+                    </style>
+                    <li class="yNFsl SkUj4c">&#1041;&#1091;&#1076;&#1100;-&#1103;&#1082;&#1086;&#1102; &#1084;&#1086;&#1074;&#1086;&#1102;</li>
+                    <li class="yNFsl"><a href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnt&amp;tbs=lr:lang_1uk&amp;lr=lang_uk&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQpwUIDQ">&#1064;&#1091;&#1082;&#1072;&#1090;&#1080; &#1089;&#1090;&#1086;&#1088;&#1110;&#1085;&#1082;&#1080; &#1090;&#1072;&#1082;&#1086;&#1102; &#1084;&#1086;&#1074;&#1086;&#1102;: &#1091;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;</a></li>
+                  </ul>
+                </div>
+                <div class="PA9J5">
+                  <div class="RXaOfd" role="button" tabindex="0">
+                    <div class="TWMOUc">&#1041;&#1091;&#1076;&#1100;-&#1082;&#1086;&#1083;&#1080;</div><span class="OmTIzf"></span>
+                  </div>
+                  <ul class="sa1toc ozatM">
+                    <li class="yNFsl SkUj4c">&#1041;&#1091;&#1076;&#1100;-&#1082;&#1086;&#1083;&#1080;</li>
+                    <li class="yNFsl"><a href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:h&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQpwUIDw"> &#1047;&#1072; &#1084;&#1080;&#1085;&#1091;&#1083;&#1091; &#1075;&#1086;&#1076;&#1080;&#1085;&#1091;</a></li>
+                    <li class="yNFsl"><a href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:d&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQpwUIEA"> &#1047;&#1072; &#1084;&#1080;&#1085;&#1091;&#1083;&#1110; 24 &#1075;&#1086;&#1076;&#1080;&#1085;&#1080;</a></li>
+                    <li class="yNFsl"><a href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:w&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQpwUIEQ"> &#1047;&#1072; &#1084;&#1080;&#1085;&#1091;&#1083;&#1080;&#1081; &#1090;&#1080;&#1078;&#1076;&#1077;&#1085;&#1100;</a></li>
+                    <li class="yNFsl"><a href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:m&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQpwUIEg"> &#1047;&#1072; &#1084;&#1080;&#1085;&#1091;&#1083;&#1080;&#1081; &#1084;&#1110;&#1089;&#1103;&#1094;&#1100;</a></li>
+                    <li class="yNFsl"><a href="/search?q=parsing+steps&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQpwUIEw"> &#1047;&#1072; &#1084;&#1080;&#1085;&#1091;&#1083;&#1080;&#1081; &#1088;&#1110;&#1082;</a></li>
+                  </ul>
+                </div>
+                <div class="PA9J5">
+                  <div class="RXaOfd" role="button" tabindex="0">
+                    <div class="TWMOUc">&#1059;&#1089;&#1110; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1080;</div><span class="OmTIzf"></span>
+                  </div>
+                  <ul class="sa1toc ozatM">
+                    <li class="yNFsl SkUj4c">&#1059;&#1089;&#1110; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1080;</li>
+                    <li class="yNFsl"><a href="/search?q=parsing_steps&amp;ie=UTF-8&amp;source=lnt&amp;tbs=li:1&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQpwUIFQ">&#1044;&#1086;&#1089;&#1083;&#1110;&#1074;&#1085;&#1086;</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+            (function() {
+              var a = document.getElementById("st-toggle"),
+                b = document.getElementById("st-card");
+              a && b && a.addEventListener("click", function(c) {
+                b.style.display = b.style.display ? "" : "none";
+                c.preventDefault()
+              }, !1);
+            }).call(this);
+          </script>
+        </div>
+      </div>
+      <style>
+        .Gx5Zad {
+          background-color: #fff;
+          margin-bottom: 30px;
+          box-shadow: 0 0 0 1px #dfe1e5;
+          border-radius: 8px
+        }
+
+        .pkphOe {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .EtOod>*:first-child {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px
+        }
+
+        .EtOod>*:last-child {
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px
+        }
+
+        .EtOod>.qxDOhb>*:first-child {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px
+        }
+
+        .EtOod>.qxDOhb>*:last-child {
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px
+        }
+
+        .rLshyf,
+        .BmP5tf {
+          padding-top: 12px;
+          padding-bottom: 12px
+        }
+
+        .YOx3Ab {
+          padding-left: 16px;
+        }
+
+        .w1C3Le,
+        .BmP5tf,
+        .G5NbBd,
+        .CS4w5b {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .G5NbBd {
+          padding-bottom: 12px
+        }
+
+        .CS4w5b {
+          padding-top: 12px
+        }
+
+        .MUxGbd {
+          font-size: 14px;
+          font-family: arial, sans-serif;
+          line-height: 22px;
+          padding-top: 1px;
+          margin-bottom: -1px
+        }
+
+        .MUxGbd.v0nnCb {
+          font-size: 20px;
+          line-height: 26px;
+          padding-top: 1px;
+          margin-bottom: -1px
+        }
+
+        .lyLwlc {
+          color: #202124
+        }
+
+        a.fdYsqf {
+          color: #4b11a8
+        }
+
+        .fP1Qef {
+          background: transparent !important;
+          box-shadow: none !important;
+          border: none !important
+        }
+
+        .Gx5Zad.fP1Qef {
+          margin-top: -12px;
+          margin-bottom: 18px
+        }
+
+        .rl7ilb {
+          display: block;
+          clear: both
+        }
+
+        .egMi0 {
+          margin-bottom: -19px
+        }
+
+        .kCrYT {
+          padding: 12px 16px 12px
+        }
+
+        .sCuL3 {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          padding-top: 1px;
+          margin-bottom: -1px
+        }
+
+        .j039Wc {
+          padding-top: 28px;
+          margin-bottom: -1px
+        }
+
+        .DnJfK {
+          position: relative
+        }
+
+        .l97dzf {
+          font-weight: 400
+        }
+
+        .zBAuLc {
+          line-height: normal;
+          margin: 0;
+          padding: 0
+        }
+
+        .BNeawe {
+          white-space: pre-line;
+          word-wrap: break-word
+        }
+
+        .vvjwJb {
+          color: #1a0dab;
+          font-size: 20px;
+          line-height: 26px
+        }
+
+        a:visited .vvjwJb,
+        .vvjwJb a:visited {
+          color: #4b11a8
+        }
+
+        .vvjwJb.HrGdeb {
+          color: #fff
+        }
+
+        a:visited .vvjwJb.HrGdeb,
+        .vvjwJb.HrGdeb a:visited {
+          color: rgba(255, 255, 255, .70)
+        }
+
+        .UPmit {
+          font-size: 14px;
+          line-height: 22px
+        }
+
+        .UPmit.HrGdeb {
+          color: rgba(255, 255, 255, .70)
+        }
+
+        .UPmit.AP7Wnd {
+          color: #202124
+        }
+
+        .lRVwie {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden
+        }
+
+        .Ap5OSd {
+          padding-bottom: 12px
+        }
+
+        .s3v9rd {
+          font-size: 14px;
+          line-height: 22px
+        }
+
+        .s3v9rd.HrGdeb {
+          color: #fff
+        }
+
+        .s3v9rd.AP7Wnd {
+          color: #202124
+        }
+
+        .mSx1Ee {
+          padding-left: 48px;
+          margin: 0
+        }
+
+        .v9i61e {
+          padding-bottom: 8px
+        }
+
+        .K8tyEc {
+          padding-bottom: 12px
+        }
+
+        .mEUgP {
+          font-weight: bold;
+          font-size: 16px;
+          color: #000;
+          margin: 0;
+          padding: 12px 16px 0 16px
+        }
+
+        .FCUp0c {
+          font-weight: bold
+        }
+
+        .x54gtf {
+          height: 1px;
+          background-color: #dadce0;
+          margin: 0 16px
+        }
+
+        .Q0HXG {
+          height: 1px;
+          background-color: #dadce0
+        }
+
+        .C7GS5b {
+          margin-left: 12px;
+          display: table-cell;
+          vertical-align: middle
+        }
+
+        .rkGIWe {
+          padding: 14px
+        }
+
+        .xpc .hwc,
+        .xpx .hwx {
+          display: none
+        }
+
+        .iIWm4b {
+          box-sizing: border-box;
+          min-height: 48px
+        }
+
+        .fLtXsc {
+          padding: 14px;
+          position: relative
+        }
+
+        .NtmAdb {
+          width: 40px;
+          height: 40px;
+          overflow: hidden;
+          margin-top: -10px;
+          margin-bottom: -16px;
+          margin-right: 8px;
+          border-radius: 4px
+        }
+
+        .xpc .NtmAdb {
+          display: inline-block
+        }
+
+        .xpx .NtmAdb {
+          display: none
+        }
+
+        .Lt3Tzc {
+          display: inline-block;
+          padding-right: 26px
+        }
+
+        .Lym8W {
+          width: 14px;
+          height: 20px;
+          position: relative;
+          margin: 0 auto
+        }
+
+        .xCgLUe {
+          position: absolute;
+          right: 16px;
+          margin-top: -10px;
+          top: 50%
+        }
+
+        .Lym8W div {
+          position: absolute;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          width: 0;
+          height: 0;
+          left: 0
+        }
+
+        .IyYaEd {
+          top: 7px;
+          border-top: 7px solid #70757a
+        }
+
+        .ECUHQe {
+          top: 4px;
+          border-top: 7px solid #fff
+        }
+
+        .AeQQub {
+          bottom: 7px;
+          border-bottom: 7px solid #70757a
+        }
+
+        .YCU7eb {
+          bottom: 4px;
+          border-bottom: 7px solid #fff
+        }
+
+        .qxDOhb {
+          border-radius: 0
+        }
+
+        .yStFkb .xpd {
+          border-radius: 8px;
+          box-shadow: none;
+          border: 1px solid #dadce0;
+          margin-bottom: 0
+        }
+
+        .oTWEpb {
+          padding-top: 12px
+        }
+
+        .n1Qedd {
+          overflow: hidden;
+          text-align: center
+        }
+
+        .KMAGC {
+          margin: 0 auto;
+          display: block
+        }
+
+        .ho0sdc {
+          margin: 0 -50%;
+          display: inline-block
+        }
+
+        .Xb5VRe {
+          color: #1a0dab
+        }
+
+        a:visited .Xb5VRe {
+          color: #4b11a8
+        }
+
+        .Xb5VRe.tr0dw {
+          color: #fff
+        }
+
+        a:visited .Xb5VRe.tr0dw {
+          color: rgba(255, 255, 255, .70)
+        }
+
+        .P1NWSe {
+          display: table;
+          width: 100%;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          margin-bottom: -12px
+        }
+
+        .wOMIed {
+          display: table-cell;
+          vertical-align: top
+        }
+
+        .nkPlDb {
+          vertical-align: middle
+        }
+
+        .JhFlyf {
+          color: #3c4043;
+          font-size: 14px;
+          text-align: center
+        }
+
+        .VQFmSd {
+          display: block;
+          white-space: pre-line;
+          word-wrap: break-word
+        }
+
+        .JhFlyf.VQFmSd {
+          line-height: 22px
+        }
+
+        .f4J0H {
+          padding: 18px
+        }
+
+        .ZTv9Bb {
+          display: block
+        }
+
+        .nVTMpe {
+          border-radius: 8px
+        }
+
+        .deIvCb {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 400
+        }
+
+        .deIvCb.HrGdeb {
+          color: #fff
+        }
+
+        .deIvCb.AP7Wnd {
+          color: #202124
+        }
+
+        .X7NTVe {
+          display: table;
+          width: 100%;
+          padding-right: 16px;
+          box-sizing: border-box
+        }
+
+        .tHmfQe {
+          display: table-cell;
+          padding: 12px 0 12px 16px
+        }
+
+        .UHtrk {
+          width: 72px
+        }
+
+        .HBTM6d {
+          width: 30px
+        }
+
+        .XS7yGd {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+          padding: 12px 0 12px 8px
+        }
+
+        .am3QBf {
+          display: table;
+          vertical-align: top
+        }
+
+        .pkr8ib {
+          display: table-cell;
+          min-width: 40px;
+          padding-right: 8px
+        }
+
+        .uEec3 {
+          font-size: 12px;
+          line-height: 16px
+        }
+
+        .uEec3.HrGdeb {
+          color: rgba(255, 255, 255, .70)
+        }
+
+        .uEec3.AP7Wnd {
+          color: #70757a
+        }
+
+        .aJyiOc {
+          color: #202124
+        }
+
+        .XLloXe {
+          color: #1a0dab;
+          font-size: 14px;
+          line-height: 20px
+        }
+
+        a:visited .XLloXe,
+        .XLloXe a:visited {
+          color: #4b11a8
+        }
+
+        .XLloXe.HrGdeb {
+          color: #fff
+        }
+
+        a:visited .XLloXe.HrGdeb,
+        .XLloXe.HrGdeb a:visited {
+          color: rgba(255, 255, 255, .70)
+        }
+
+        .r0bn4c.tr0dw {
+          color: rgba(255, 255, 255, .70)
+        }
+
+        .r0bn4c.rQMQod {
+          color: #70757a
+        }
+
+        .tAd8D {
+          font-size: 14px;
+          line-height: 20px
+        }
+
+        .tAd8D.HrGdeb {
+          color: rgba(255, 255, 255, .70)
+        }
+
+        .tAd8D.AP7Wnd {
+          color: #70757a
+        }
+
+        .Xdlr0d {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          margin: 0 -8px;
+          padding: 2px 0 16px 24px;
+          margin-top: -2px;
+          transform: translate3d(0, 0, 0)
+        }
+
+        .idg8be {
+          display: table;
+          border-collapse: separate;
+          border-spacing: 8px 0;
+          margin: 0 -8px;
+          padding-right: 16px
+        }
+
+        .BVG0Nb {
+          display: table-cell;
+          vertical-align: top;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 0 1px #dfe1e5;
+          overflow: hidden
+        }
+
+        .WddBJd {
+          display: block;
+          margin: 0 auto
+        }
+
+        .RJI4s {
+          vertical-align: middle
+        }
+
+        .mHhylf {
+          display: table-cell;
+          vertical-align: middle
+        }
+
+        .WZ5GJf {
+          align-items: center;
+          padding: 0 20px;
+          min-width: 112px
+        }
+
+        .qN9Ked,
+        .DXk5Me {
+          margin: 0 auto
+        }
+
+        .DXk5Me {
+          cursor: pointer;
+          margin-bottom: 12px
+        }
+
+        .Dk7jOe {
+          display: block;
+          margin: 0 auto
+        }
+
+        .Qi9Fd {
+          background: #fff;
+          border: 0;
+          border-radius: 999px;
+          display: block;
+          height: 56px;
+          justify-content: center;
+          width: 56px;
+          z-index: 0
+        }
+
+        .Qi9Fd {
+          box-shadow: 0 0 0 1px #dfe1e5, inset 0 0 0 0 rgba(0, 0, 0, .1), inset 0 0 0 0 rgba(255, 255, 255, .5)
+        }
+
+        .Qi9Fd:focus {
+          outline: none
+        }
+
+        .Qi9Fd .hWHuJ {
+          display: block;
+          margin: 0 auto
+        }
+
+        .ji5jpf {
+          text-align: center
+        }
+
+        .gGQDvd {
+          padding: 14px;
+          position: relative
+        }
+
+        .Q71vJc {
+          display: block;
+          position: relative;
+          width: 100%
+        }
+
+        .kjGX2 {
+          position: absolute;
+          left: 48px;
+          right: 0;
+          vertical-align: bottom;
+          display: inline-block;
+          color: #3c4043
+        }
+
+        .ieB2Dd {
+          overflow: hidden;
+          margin-top: -10px;
+          margin-bottom: -16px;
+          margin-right: 8px;
+          border-radius: 4px;
+          display: inline-block;
+          border-radius: 50%;
+          padding: 10px
+        }
+
+        .OEaqif {
+          width: 20px;
+          height: 20px;
+          display: block
+        }
+
+        .nMymef {
+          display: flex
+        }
+
+        .G5eFlf {
+          flex: 1;
+          display: block
+        }
+
+        .nMymef span {
+          text-align: center
+        }
+
+        .EYqSq {
+          margin: 6px 4px 9px 0;
+          border-radius: 100%;
+          display: inline-block;
+          height: 10px;
+          vertical-align: middle;
+          width: 10px
+        }
+
+        .dfB0uf {
+          color: #3c4043;
+          font-weight: bold
+        }
+      </style>
+      <div>
+        <!--SW_C_X-->undefined
+      </div>undefined<div></div>undefined<div class="Gx5Zad xpd EtOod pkphOe">
+        <div id="scc" class="BmP5tf">
+          <div class="MUxGbd v0nnCb lyLwlc">&#1042;&#1110;&#1076;&#1086;&#1073;&#1088;&#1072;&#1078;&#1077;&#1085;&#1085;&#1103; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1110;&#1074; &#1076;&#1083;&#1103; &#1079;&#1072;&#1087;&#1080;&#1090;&#1091;: <a id="scl" href="/search?ie=UTF-8&amp;q=parsing+steps&amp;spell=1" data-ved="2ahUKEwisrunbrur-AhW-h_0HHfr4BboQkeECegQIDBAB">
+              <span>
+                <b>
+                  <i>parsing steps</i>
+                </b>
+              </span>
+            </a>
+            <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+              (function() {
+                var q = 'parsing steps';
+                (function() {
+                  var a = document.getElementById("scl");
+                  a.onclick = function(b) {
+                    document.getElementsByName("q")[0].value = q;
+                    document.getElementById("scc").outerHTML = "";
+                    window.logVe(a);
+                    b.preventDefault()
+                  };
+                }).call(this);
+              })();
+            </script>
+          </div>
+          <div class="MUxGbd lyLwlc">&#1053;&#1072;&#1090;&#1086;&#1084;&#1110;&#1089;&#1090;&#1100; &#1096;&#1091;&#1082;&#1072;&#1090;&#1080; <a href="/search?ie=UTF-8&amp;q=parsing_steps&amp;nfpr=1&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQvgV6BAgMEAI">parsing_steps</a>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://www.tutorialspoint.com/compiler_design/compiler_design_parser.htm&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAIQAg&amp;usg=AOvVaw2I9oqYUy9ExpJSw0RM7S0E">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">Compiler Design - Parser - Tutorialspoint</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">www.tutorialspoint.com &#8250; compiler_design &#8250; co...</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">Reduce step : When the parser finds a complete grammar rule (RHS) and replaces it to (LHS), it is known as reduce-step. This occurs when the top of the stack ...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad xpd EtOod pkphOe">
+          <div class="K8tyEc">
+            <div class="mEUgP">
+              <span>
+                <div class="BNeawe">
+                  <span class="FCUp0c rQMQod">&#1051;&#1102;&#1076;&#1080; &#1090;&#1072;&#1082;&#1086;&#1078; &#1079;&#1072;&#1087;&#1080;&#1090;&#1091;&#1074;&#1072;&#1083;&#1080;</span>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="xpc">
+              <div class="duf-h">
+                <div class="fLtXsc iIWm4b" aria-expanded="false" id="tsuid_1" role="button" tabindex="0" data-ved="2ahUKEwisrunbrur-AhW-h_0HHfr4BboQuk56BAgHEAI">
+                  <div class="Lt3Tzc">What is the process of parsing?</div>
+                  <div class="Lym8W xCgLUe">
+                    <div class="AeQQub hwc"></div>
+                    <div class="YCU7eb hwc"></div>
+                    <div class="IyYaEd hwx"></div>
+                    <div class="ECUHQe hwx"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="qxDOhb" id="accdef_1"></div>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="xpc">
+              <div class="duf-h">
+                <div class="fLtXsc iIWm4b" aria-expanded="false" id="tsuid_2" role="button" tabindex="0" data-ved="2ahUKEwisrunbrur-AhW-h_0HHfr4BboQuk56BAgHEAk">
+                  <div class="Lt3Tzc">What are the methods of parsing?</div>
+                  <div class="Lym8W xCgLUe">
+                    <div class="AeQQub hwc"></div>
+                    <div class="YCU7eb hwc"></div>
+                    <div class="IyYaEd hwx"></div>
+                    <div class="ECUHQe hwx"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="qxDOhb" id="accdef_3"></div>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="xpc">
+              <div class="duf-h">
+                <div class="fLtXsc iIWm4b" aria-expanded="false" id="tsuid_3" role="button" tabindex="0" data-ved="2ahUKEwisrunbrur-AhW-h_0HHfr4BboQuk56BAgHEBA">
+                  <div class="Lt3Tzc">How do you make a parsing?</div>
+                  <div class="Lym8W xCgLUe">
+                    <div class="AeQQub hwc"></div>
+                    <div class="YCU7eb hwc"></div>
+                    <div class="IyYaEd hwx"></div>
+                    <div class="ECUHQe hwx"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="qxDOhb" id="accdef_5"></div>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="xpc">
+              <div class="duf-h">
+                <div class="fLtXsc iIWm4b" aria-expanded="false" id="tsuid_4" role="button" tabindex="0" data-ved="2ahUKEwisrunbrur-AhW-h_0HHfr4BboQuk56BAgHEBg">
+                  <div class="Lt3Tzc">What is parsing and how does it work?</div>
+                  <div class="Lym8W xCgLUe">
+                    <div class="AeQQub hwc"></div>
+                    <div class="YCU7eb hwc"></div>
+                    <div class="IyYaEd hwx"></div>
+                    <div class="ECUHQe hwx"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="qxDOhb" id="accdef_7"></div>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="xpc">
+              <div class="duf-h">
+                <div class="fLtXsc iIWm4b" aria-expanded="false" id="tsuid_5" role="button" tabindex="0" data-ved="2ahUKEwisrunbrur-AhW-h_0HHfr4BboQuk56BAgHEB8">
+                  <div class="Lt3Tzc">What is parsing technique with example?</div>
+                  <div class="Lym8W xCgLUe">
+                    <div class="AeQQub hwc"></div>
+                    <div class="YCU7eb hwc"></div>
+                    <div class="IyYaEd hwx"></div>
+                    <div class="ECUHQe hwx"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="qxDOhb" id="accdef_9"></div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Parsing&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAYQAg&amp;usg=AOvVaw2jpacfb6uLP5Zao8je9CxT">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">Parsing - Wikipedia</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">en.wikipedia.org &#8250; wiki &#8250; Parsing</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div class="v9i61e">
+                    <div class="BNeawe s3v9rd AP7Wnd">Parsing, syntax analysis, or syntactic analysis is the process of analyzing a string of symbols, either in natural language, computer languages or data ...</div>
+                  </div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">
+                      <span class="BNeawe">
+                        <a href="/url?q=https://en.wikipedia.org/wiki/Shallow_parsing&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ0gJ6BAgGEAU&amp;usg=AOvVaw0lrK7cfU74mrZaQ1G_5VTE">
+                          <span class="XLloXe AP7Wnd">Shallow parsing</span>
+                        </a>
+                      </span> · <span class="BNeawe">
+                        <a href="/url?q=https://en.wikipedia.org/wiki/Parsing_expression_grammar&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ0gJ6BAgGEAY&amp;usg=AOvVaw1Wk4ger_CugAub-bUY3c97">
+                          <span class="XLloXe AP7Wnd">Parsing expression grammar</span>
+                        </a>
+                      </span> · <span class="BNeawe">
+                        <a href="/url?q=https://en.wikipedia.org/wiki/Category:Natural_language_parsing&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ0gJ6BAgGEAc&amp;usg=AOvVaw3K-m-NZxLdR8fm5wEjociU">
+                          <span class="XLloXe AP7Wnd">Natural language parsing</span>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://www.ibm.com/docs/SSB27U_7.1.0/com.ibm.zvm.v710.dmsb1/dmsb142.htm&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAsQAg&amp;usg=AOvVaw12byEgBvbLddz3m69yCVPY">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">Details of Steps in Parsing - IBM</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">www.ibm.com &#8250; docs &#8250; dmsb142</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">Details of Steps in Parsing · string start: is the beginning of the source string (or substring). · string end: is the end of the source string (or substring).</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://www.geeksforgeeks.org/introduction-of-parsing-ambiguity-and-parsers-set-1/&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAAQAg&amp;usg=AOvVaw1JQ0kiiNHsbAOP7T1wl0_K">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">Parsing | Set 1 (Introduction, Ambiguity and Parsers) - GeeksforGeeks</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">www.geeksforgeeks.org &#8250; introduction-of-parsi...</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">
+                      <span class="r0bn4c rQMQod">9 &#1089;&#1110;&#1095;. 2023&#8239;&#1088;.</span>
+                      <span class="r0bn4c rQMQod"> · </span>The parser obtains a string of tokens from the lexical analyzer and verifies that the string can be the grammar for the source language. It ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://www.geeksforgeeks.org/construction-of-ll1-parsing-table/&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAEQAg&amp;usg=AOvVaw15kM32zueC4Z8mUrEaoNJj">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">Construction of LL(1) Parsing Table - GeeksforGeeks</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">www.geeksforgeeks.org &#8250; construction-of-ll1-p...</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">
+                      <span class="r0bn4c rQMQod">13 &#1073;&#1077;&#1088;. 2023&#8239;&#1088;.</span>
+                      <span class="r0bn4c rQMQod"> · </span>Step 3: Make a parser table. Now, the LL(1) Parsing Table is: id, +, *, (, ), $ ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://www.techtarget.com/searchapparchitecture/definition/parser&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAMQAg&amp;usg=AOvVaw3pBDQW4pIhAIFQOa6f2-Xa">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">What is a Parser? Definition, Types and Examples - TechTarget</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">www.techtarget.com &#8250; searchapparchitecture</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">Parsing is a basic coding concept that is usually a part of a compiler. Learn how it works in most high-level programming languages.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://tomassetti.me/guide-parsing-algorithms-terminology/&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAUQAg&amp;usg=AOvVaw1XBU0PKE6xGpEhI-jspk_-">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">A Guide To Parsing: Algorithms And Terminology</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">tomassetti.me &#8250; guide-parsing-algorithms-termi...</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">The parser needs the lexer because it does not work directly on the text, but on the output produced by the lexer. Not all parsers adopt this two-steps ...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://pypi.org/project/parsing-steps/&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAkQAg&amp;usg=AOvVaw3KvD---SCNEhF1lfGwxlA7">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">parsing-steps - PyPI</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">pypi.org &#8250; project &#8250; parsing-steps</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">
+                      <span class="r0bn4c rQMQod">15 &#1073;&#1077;&#1088;. 2023&#8239;&#1088;.</span>
+                      <span class="r0bn4c rQMQod"> · </span>Parsing steps. A simple helper for data parsing. SimpleParsingStep usage example. import time from parsing_steps import SimpleParsingStep ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>undefined
+      </div>undefined<div>
+        <div class="Gx5Zad xpd EtOod pkphOe">
+          <div class="kCrYT">
+            <div class="BNeawe deIvCb AP7Wnd">
+              <span class="BNeawe">
+                <a href="https://www.google.com/search?ie=UTF-8&amp;ei=GFpbZKzCBr6P9u8P-vGX0As&amp;q=parsing+steps&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQsAR6BAgIEAE">
+                  <span class="deIvCb AP7Wnd">
+                    <span class="FCUp0c rQMQod">&#1047;&#1086;&#1073;&#1088;&#1072;&#1078;&#1077;&#1085;&#1085;&#1103;</span>
+                  </span>
+                </a>
+              </span>
+            </div>
+            <div class="BNeawe tAd8D AP7Wnd">
+              <span class="BNeawe">
+                <a href="https://www.google.com/search?ie=UTF-8&amp;ei=GFpbZKzCBr6P9u8P-vGX0As&amp;q=parsing+steps&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ7Al6BAgIEAI">
+                  <span class="tAd8D AP7Wnd">
+                    <span class="rQMQod Xb5VRe">&#1055;&#1077;&#1088;&#1077;&#1075;&#1083;&#1103;&#1085;&#1091;&#1090;&#1080; &#1074;&#1089;&#1077;</span>
+                  </span>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div class="Xdlr0d">
+                  <div class="idg8be">
+                    <a class="BVG0Nb" href="https://www.google.com/imgres?imgurl=https://www.researchgate.net/publication/317353769/figure/fig1/AS:537720862801920@1505214052576/Parsing-steps-of-hypoparsr-Table-structure-detection-summarizes-the-detection-of-row-and.png&amp;imgrefurl=https://www.researchgate.net/figure/Parsing-steps-of-hypoparsr-Table-structure-detection-summarizes-the-detection-of-row-and_fig1_317353769&amp;h=546&amp;w=721&amp;tbnid=OjIQq1wzhfPyWM&amp;q=parsing+steps&amp;tbnh=106&amp;tbnw=140&amp;usg=AI4_-kRKdCF8HIauyPthiCOgKgnLhi23jw&amp;vet=1&amp;docid=5yK6PAJohlDYJM&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ9QF6BAgIEAQ">
+                      <div>
+                        <img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="Parsing steps of hypoparsr. Table structure detection summarizes ..." src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_11" data-deferred="1">
+                      </div>
+                    </a>
+                    <a class="BVG0Nb" href="https://www.google.com/imgres?imgurl=https://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/resources/Images/director/parseoverview.png&amp;imgrefurl=https://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/processor_library/text_analysis/parse.htm&amp;h=289&amp;w=641&amp;tbnid=LYB_mH4499La8M&amp;q=parsing+steps&amp;tbnh=62&amp;tbnw=137&amp;usg=AI4_-kRiFCk-A-QYWU5SHPdEXN4b0Qunqw&amp;vet=1&amp;docid=wxmaYf_sI72EKM&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ9QF6BAgIEAY">
+                      <div>
+                        <img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="Parse" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_17" data-deferred="1">
+                      </div>
+                    </a>
+                    <a class="BVG0Nb" href="https://www.google.com/imgres?imgurl=https://media.geeksforgeeks.org/wp-content/uploads/Parsers.jpg&amp;imgrefurl=https://www.geeksforgeeks.org/introduction-of-parsing-ambiguity-and-parsers-set-1/&amp;h=450&amp;w=958&amp;tbnid=b7c2QFyLRolC9M&amp;q=parsing+steps&amp;tbnh=70&amp;tbnw=148&amp;usg=AI4_-kTz1qQA_QM07q1VrlhjXFqsTXlKTQ&amp;vet=1&amp;docid=IjfV1ZXLuXTaXM&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ9QF6BAgIEAg">
+                      <div>
+                        <img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="Parsing | Set 1 (Introduction, Ambiguity and Parsers) - GeeksforGeeks" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_21" data-deferred="1">
+                      </div>
+                    </a>
+                    <a class="BVG0Nb" href="https://www.google.com/imgres?imgurl=https://upload.wikimedia.org/wikipedia/commons/d/d6/Parser_Flow%25D5%25B8.gif&amp;imgrefurl=https://en.wikipedia.org/wiki/Parsing&amp;h=406&amp;w=145&amp;tbnid=-ZDHV5804apBWM&amp;q=parsing+steps&amp;tbnh=124&amp;tbnw=44&amp;usg=AI4_-kTqZpbXv-MMmxQAIZLIjtzFaemmYw&amp;vet=1&amp;docid=GmgkHgiADe86GM&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ9QF6BAgIEAo">
+                      <div>
+                        <img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="Parsing - Wikipedia" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_23" data-deferred="1">
+                      </div>
+                    </a>
+                    <a class="BVG0Nb" href="https://www.google.com/imgres?imgurl=https://i.stack.imgur.com/s20l0.jpg&amp;imgrefurl=https://stackoverflow.com/questions/4754948/how-do-c-c-parsers-work&amp;h=428&amp;w=537&amp;tbnid=_COFh6WX4TE8AM&amp;q=parsing+steps&amp;tbnh=105&amp;tbnw=132&amp;usg=AI4_-kSjwDXKaP41FZDYcd1mzdroBbUMdQ&amp;vet=1&amp;docid=f5CMV0uNRLT9_M&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ9QF6BAgIEAw">
+                      <div>
+                        <img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="parsing - How do C/C++ parsers work? - Stack Overflow" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_25" data-deferred="1">
+                      </div>
+                    </a>
+                    <a class="BVG0Nb" href="https://www.google.com/imgres?imgurl=https://media.geeksforgeeks.org/wp-content/uploads/pp-5.png&amp;imgrefurl=https://www.geeksforgeeks.org/sql-query-processing/&amp;h=820&amp;w=1018&amp;tbnid=aBYWvdXopuQMpM&amp;q=parsing+steps&amp;tbnh=121&amp;tbnw=150&amp;usg=AI4_-kRmlwPS8KDIREIJx3LKlIwAe3KYgA&amp;vet=1&amp;docid=aoTUlOugl-HDUM&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ9QF6BAgIEA4">
+                      <div>
+                        <img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="SQL | Query Processing - GeeksforGeeks" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_27" data-deferred="1">
+                      </div>
+                    </a>
+                    <div class="mHhylf">
+                      <div class="WZ5GJf">
+                        <a class="qN9Ked" href="https://www.google.com/search?ie=UTF-8&amp;ei=GFpbZKzCBr6P9u8P-vGX0As&amp;q=parsing+steps&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ7Al6BAgIEA8">
+                          <button class="DXk5Me Qi9Fd" tabindex="-1">
+                            <span class="hWHuJ">
+                              <img class="Dk7jOe" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:24px;max-height:24px" id="dimg_29" data-deferred="1">
+                            </span>
+                          </button>
+                          <div class="BNeawe ji5jpf tAd8D AP7Wnd">&#1055;&#1077;&#1088;&#1077;&#1075;&#1083;&#1103;&#1085;&#1091;&#1090;&#1080; &#1074;&#1089;&#1077;</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+          <div class="egMi0 kCrYT">
+            <a href="/url?q=https://byjus.com/gate/parsing-in-compiler-design/&amp;sa=U&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAoQAg&amp;usg=AOvVaw1n_vYETzJEdRtEv_hOnXtV">
+              <div class="DnJfK">
+                <div class="j039Wc">
+                  <h3 class="zBAuLc l97dzf">
+                    <div class="BNeawe vvjwJb AP7Wnd">Introduction to Parsing in Compiler Design Notes - Byju's</div>
+                  </h3>
+                </div>
+                <div class="sCuL3">
+                  <div class="BNeawe UPmit AP7Wnd lRVwie">byjus.com &#8250; ... &#8250; GATE Notes For CSE</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="kCrYT">
+            <div>
+              <div class="BNeawe s3v9rd AP7Wnd">
+                <div>
+                  <div class="v9i61e">
+                    <div class="BNeawe s3v9rd AP7Wnd">Reduce Step: When the parser has a complete grammar rule on the right-hand side and replaces it with RHS. LR Parsing: LR parser is one of the most efficient ...</div>
+                  </div>
+                  <div>
+                    <div class="BNeawe s3v9rd AP7Wnd">Introduction To C: <span class="r0bn4c rQMQod">Difference Between Overloading And Overriding In Java</span>
+                      <br>Difference Between While Loop And Do While Loop: <span class="r0bn4c rQMQod">What Is The Difference Between Java And Javascript</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="Gx5Zad xpd EtOod pkphOe">
+          <div class="K8tyEc">
+            <div class="mEUgP">
+              <span>
+                <div class="BNeawe">&#1055;&#1086;&#1074;&#8217;&#1103;&#1079;&#1072;&#1085;&#1110; &#1087;&#1086;&#1096;&#1091;&#1082;&#1086;&#1074;&#1110; &#1079;&#1072;&#1087;&#1080;&#1090;&#1080;</div>
+              </span>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="gGQDvd iIWm4b">
+              <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Parsing+techniques+PDF&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ1QJ6BAgEEAI">
+                <accordion-entry-search-icon>
+                  <span class="ieB2Dd">
+                    <img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_1" data-deferred="1">
+                  </span>
+                </accordion-entry-search-icon>
+                <div class="kjGX2">
+                  <span>
+                    <div class="BNeawe s3v9rd AP7Wnd lRVwie">Parsing techniques PDF</div>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="gGQDvd iIWm4b">
+              <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Recursive+descent+parsing&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ1QJ6BAgEEAQ">
+                <accordion-entry-search-icon>
+                  <span class="ieB2Dd">
+                    <img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_3" data-deferred="1">
+                  </span>
+                </accordion-entry-search-icon>
+                <div class="kjGX2">
+                  <span>
+                    <div class="BNeawe s3v9rd AP7Wnd lRVwie">Recursive descent parsing</div>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="gGQDvd iIWm4b">
+              <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Parsing+notes&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ1QJ6BAgEEAY">
+                <accordion-entry-search-icon>
+                  <span class="ieB2Dd">
+                    <img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_5" data-deferred="1">
+                  </span>
+                </accordion-entry-search-icon>
+                <div class="kjGX2">
+                  <span>
+                    <div class="BNeawe s3v9rd AP7Wnd lRVwie">Parsing notes</div>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="gGQDvd iIWm4b">
+              <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Universal+parser&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ1QJ6BAgEEAg">
+                <accordion-entry-search-icon>
+                  <span class="ieB2Dd">
+                    <img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_7" data-deferred="1">
+                  </span>
+                </accordion-entry-search-icon>
+                <div class="kjGX2">
+                  <span>
+                    <div class="BNeawe s3v9rd AP7Wnd lRVwie">Universal parser</div>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="gGQDvd iIWm4b">
+              <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=LR+parser&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ1QJ6BAgEEAo">
+                <accordion-entry-search-icon>
+                  <span class="ieB2Dd">
+                    <img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_9" data-deferred="1">
+                  </span>
+                </accordion-entry-search-icon>
+                <div class="kjGX2">
+                  <span>
+                    <div class="BNeawe s3v9rd AP7Wnd lRVwie">LR parser</div>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="gGQDvd iIWm4b">
+              <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Parser+backtracking&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ1QJ6BAgEEAw">
+                <accordion-entry-search-icon>
+                  <span class="ieB2Dd">
+                    <img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_13" data-deferred="1">
+                  </span>
+                </accordion-entry-search-icon>
+                <div class="kjGX2">
+                  <span>
+                    <div class="BNeawe s3v9rd AP7Wnd lRVwie">Parser backtracking</div>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="gGQDvd iIWm4b">
+              <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Context+free+grammar+in+Compiler+Design&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ1QJ6BAgEEA4">
+                <accordion-entry-search-icon>
+                  <span class="ieB2Dd">
+                    <img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_15" data-deferred="1">
+                  </span>
+                </accordion-entry-search-icon>
+                <div class="kjGX2">
+                  <span>
+                    <div class="BNeawe s3v9rd AP7Wnd lRVwie">Context free grammar in Compiler Design</div>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="x54gtf"></div>
+          <div>
+            <div class="gGQDvd iIWm4b">
+              <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Top-down+parser&amp;sa=X&amp;ved=2ahUKEwisrunbrur-AhW-h_0HHfr4BboQ1QJ6BAgEEBA">
+                <accordion-entry-search-icon>
+                  <span class="ieB2Dd">
+                    <img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_19" data-deferred="1">
+                  </span>
+                </accordion-entry-search-icon>
+                <div class="kjGX2">
+                  <span>
+                    <div class="BNeawe s3v9rd AP7Wnd lRVwie">Top-down parser</div>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <div class="Gx5Zad xpd EtOod pkphOe BmP5tf">
+            <div class="nMymef MUxGbd lyLwlc">
+              <a class="nBDE1b G5eFlf" href="/search?q=parsing+steps&amp;ie=UTF-8&amp;ei=GFpbZKzCBr6P9u8P-vGX0As&amp;start=10&amp;sa=N" aria-label="&#1053;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1072; &#1089;&#1090;&#1086;&#1088;&#1110;&#1085;&#1082;&#1072;">&#1059;&#1087;&#1077;&#1088;&#1077;&#1076; &gt;</a>
+            </div>
+          </div>
+        </div>
+        <div id="EOlPnc">
+          <div class="Srfpq">
+            <div>
+              <span class="EYqSq unknown_loc"></span>
+              <span class="dfB0uf">&#1041;&#1086;&#1075;&#1091;&#1085;&#1089;&#1100;&#1082;&#1080;&#1081; &#1088;&#1072;&#1081;&#1086;&#1085;, &#1046;&#1080;&#1090;&#1086;&#1084;&#1080;&#1088;, &#1046;&#1080;&#1090;&#1086;&#1084;&#1080;&#1088;&#1089;&#1100;&#1082;&#1072; &#1086;&#1073;&#1083;&#1072;&#1089;&#1090;&#1100;</span>
+            </div>
+            <span>&#1047;&#1072; &#1074;&#1072;&#1096;&#1086;&#1102; &#1030;&#1056;-&#1072;&#1076;&#1088;&#1077;&#1089;&#1086;&#1102;</span>
+            <span>&nbsp;-&nbsp;</span>
+            <a href="/url?q=https://support.google.com/websearch%3Fp%3Dws_settings_location%26hl%3Duk&amp;sa=U&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQty4IkQE&amp;usg=AOvVaw3rVNVHbHsvJVczqsVVybx8" aria-label="&#1044;&#1086;&#1082;&#1083;&#1072;&#1076;&#1085;&#1110;&#1096;&#1077; &#1087;&#1088;&#1086; &#1094;&#1077; &#1084;&#1110;&#1089;&#1094;&#1077;">&#1044;&#1086;&#1082;&#1083;&#1072;&#1076;&#1085;&#1110;&#1096;&#1077;</a>
+          </div>
+          <div>
+            <a href="/url?q=https://accounts.google.com/ServiceLogin%3Fcontinue%3Dhttps://www.google.com/search%253Fq%253Dparsing_steps%26hl%3Duk&amp;sa=U&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQxs8CCJIB&amp;usg=AOvVaw0trHB94lraeAfVapAL6mMj">&#1059;&#1074;&#1110;&#1081;&#1090;&#1080;</a>
+          </div>
+          <div>
+            <a class="xeDNfc" href="https://www.google.com/preferences?hl=uk&amp;fg=1&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQ5fUCCJMB">&#1053;&#1072;&#1083;&#1072;&#1096;&#1090;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;</a>
+            <a class="xeDNfc" href="https://policies.google.com/privacy?hl=uk&amp;fg=1">&#1050;&#1086;&#1085;&#1092;&#1110;&#1076;&#1077;&#1085;&#1094;&#1110;&#1081;&#1085;&#1110;&#1089;&#1090;&#1100;</a>
+            <a class="xeDNfc" href="https://policies.google.com/terms?hl=uk&amp;fg=1">&#1059;&#1084;&#1086;&#1074;&#1080;</a>
+            <a class="xeDNfc" href="/setprefs?hl=uk&amp;prev=https://www.google.com/search?q%3Dparsing_steps%26pccc%3D1&amp;sig=0_G3OeszACJ5g2uLZXPaQe8u-9Ecs%3D&amp;cs=2&amp;sa=X&amp;ved=0ahUKEwisrunbrur-AhW-h_0HHfr4BboQjcAJCJQB">&#1058;&#1077;&#1084;&#1085;&#1072; &#1090;&#1077;&#1084;&#1072;: &#1074;&#1080;&#1084;&#1082;&#1085;&#1077;&#1085;&#1086;</a>
+          </div>
+        </div>
+      </footer>
+      <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+        (function() {
+          var hl = 'uk';
+          (function() {
+            var f = this || self,
+              g = function(a) {
+                return a
+              };
+            var h, k = function() {
+              if (void 0 === h) {
+                var a = null,
+                  b = f.trustedTypes;
+                if (b && b.createPolicy) {
+                  try {
+                    a = b.createPolicy("goog#html", {
+                      createHTML: g,
+                      createScript: g,
+                      createScriptURL: g
+                    })
+                  } catch (c) {
+                    f.console && f.console.error(c.message)
+                  }
+                  h = a
+                } else h = a
+              }
+              return h
+            };
+            var p = function(a, b) {
+                this.h = a === l && b || "";
+                this.g = m
+              },
+              q = function(a) {
+                return a instanceof p && a.constructor === p && a.g === m ? a.h : "type_error:Const"
+              },
+              m = {},
+              l = {};
+            var r = function(a) {
+              this.g = a
+            };
+            r.prototype.toString = function() {
+              return this.g + ""
+            };
+            var t = function(a) {
+                return a instanceof r && a.constructor === r ? a.g : "type_error:TrustedResourceUrl"
+              },
+              x = function() {
+                var a = {},
+                  b = q(new p(l, "/complete/search"));
+                if (!u.test(b)) throw Error("e`" + b);
+                var c = b.replace(v, function(e, d) {
+                  if (!Object.prototype.hasOwnProperty.call(a, d)) throw Error("f`" + d + "`" + b + "`" + JSON.stringify(a));
+                  e = a[d];
+                  return e instanceof p ? q(e) : encodeURIComponent(String(e))
+                });
+                return w(c)
+              },
+              v = /%{(\w+)}/g,
+              u = RegExp("^((https:)?//[0-9a-z.:[\\]-]+/|/[^/\\\\]|[^:/\\\\%]+/|[^:/\\\\%]*[?#]|about:blank#)", "i"),
+              y = /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/,
+              z = {},
+              w = function(a) {
+                var b = k();
+                a = b ? b.createScriptURL(a) : a;
+                return new r(a, z)
+              },
+              A = function(a, b, c) {
+                if (null == c) return b;
+                if ("string" === typeof c) return c ? a + encodeURIComponent(c) : "";
+                for (var e in c)
+                  if (Object.prototype.hasOwnProperty.call(c, e)) {
+                    var d = c[e];
+                    d = Array.isArray(d) ? d : [d];
+                    for (var n = 0; n < d.length; n++) {
+                      var O = d[n];
+                      null != O && (b || (b = a), b += (b.length > a.length ? "&" : "") + encodeURIComponent(e) + "=" + encodeURIComponent(String(O)))
+                    }
+                  } return b
+              };
+            var B = {},
+              C = function(a) {
+                this.g = a
+              };
+            C.prototype.toString = function() {
+              return this.g.toString()
+            };
+
+            function D(a, b) {
+              if (1 === a.nodeType) {
+                var c = a.tagName;
+                if ("SCRIPT" === c || "STYLE" === c) throw Error("g");
+              }
+              a.innerHTML = b instanceof C && b.constructor === C ? b.g : "type_error:SafeHtml"
+            };
+
+            function E(a) {
+              a = null === a ? "null" : void 0 === a ? "undefined" : a;
+              var b = k();
+              a = b ? b.createHTML(a) : a;
+              return new C(a, B)
+            };
+            var F = document.querySelector(".l"),
+              G = document.querySelector("#sf"),
+              H = G.querySelector(".sbc"),
+              I = G.querySelector("[type=text]"),
+              J = G.querySelector("[type=submit]"),
+              K = G.querySelector(".sc"),
+              L = G.querySelector(".x"),
+              M = I.value,
+              N = [],
+              P = -1,
+              Q = M,
+              R, S, T;
+            M || (L && (L.style.display = "none"), U(!1));
+
+            function U(a) {
+              if (H.classList.contains("esbc")) {
+                var b = H.classList.contains("chsbc"),
+                  c = H.classList.contains("rtlsbc");
+                a && (K.style.display = "block", b ? (G.style.borderRadius = "20px 20px 0 0", K.style.borderBottom = "1px solid #DFE1E5", J.style.borderRadius = c ? "20px 0 0 0" : "0 20px 0 0") : H.style.borderRadius = c ? "0 8px 0 0" : "8px 0 0 0");
+                a || (K.style.display = "none", b ? (G.style.borderRadius = "20px", K.style.borderBottom = "none", J.style.borderRadius = c ? "20px 0 0 20px" : "0 20px 20px 0") : H.style.borderRadius = c ? "0 8px 8px 0" : "8px 0 0 8px")
+              }
+            }
+
+            function V() {
+              G.querySelector("[name=oq]").value = Q;
+              G.querySelector("[name=aqs]").value = "heirloom-srp." + (0 <= P ? P : "") + "." + (0 < N.length ? "0l" + N.length : "")
+            }
+
+            function W() {
+              R = null;
+              if (S) {
+                var a = {
+                  client: "heirloom-srp",
+                  hl: hl,
+                  json: "t",
+                  callback: "hS",
+                  q: S
+                };
+                "undefined" !== typeof ds && ds && (a.ds = ds);
+                var b = document;
+                var c = "SCRIPT";
+                "application/xhtml+xml" === b.contentType && (c = c.toLowerCase());
+                c = b.createElement(c);
+                b = x();
+                b = y.exec(t(b).toString());
+                var e = b[3] || "";
+                a = w(b[1] + A("?", b[2] || "", a) + A("#", e));
+                c.src = t(a);
+                var d, n;
+                (d = (a = null == (n = (d = (c.ownerDocument && c.ownerDocument.defaultView || window).document).querySelector) ? void 0 : n.call(d, "script[nonce]")) ? a.nonce || a.getAttribute("nonce") || "" : "") && c.setAttribute("nonce", d);
+                document.body.appendChild(c);
+                S = null;
+                R = setTimeout(W, 500)
+              }
+            }
+
+            function X() {
+              for (; K.firstChild;) K.removeChild(K.firstChild);
+              N = [];
+              P = -1;
+              U(!1)
+            }
+
+            function Y() {
+              var a = K.querySelector(".scs");
+              a && (a.className = "");
+              0 <= P ? (a = K.childNodes[P], a.className = "scs", M = a.textContent) : M = Q;
+              I.value = M
+            }
+            I.addEventListener("focus", function() {
+              F && (F.style.display = "none")
+            }, !1);
+            I.addEventListener("blur", function() {
+              X();
+              F && (F.style.display = "")
+            }, !1);
+            I.addEventListener("keyup", function(a) {
+              M = I.value;
+              T = !1;
+              13 === a.which ? V() : 27 === a.which ? (X(), F && (F.style.display = ""), M = Q, I.value = M) : 40 === a.which ? (P++, P >= N.length && (P = -1), Y()) : 38 === a.which ? (P--, -1 > P && (P = N.length - 1), Y()) : (a = M) ? (L && (L.style.display = ""), S = a, R || W(), Q = a) : (L && (L.style.display = "none"), U(!1), X(), Q = "", T = !0)
+            }, !1);
+            J.addEventListener("click", V, !1);
+            L.addEventListener("click", function() {
+              I.value = "";
+              L.style.display = "none";
+              U(!1)
+            }, !1);
+            H.addEventListener("click", function() {
+              I.focus()
+            }, !1);
+            window.hS = function(a) {
+              if (!T) {
+                X();
+                0 === a[1].length && U(!1);
+                for (var b = 0; b < a[1].length; b++) {
+                  var c = a[1][b][0],
+                    e = document.createElement("div");
+                  D(e, E(c));
+                  e.addEventListener("mousedown", function(d) {
+                    d.preventDefault();
+                    return !1
+                  }, !1);
+                  c = c.replace(/<\/?b>/g, "");
+                  e.addEventListener("click", function(d) {
+                    return function() {
+                      P = d;
+                      V();
+                      Y();
+                      X();
+                      G.submit()
+                    }
+                  }(b), !1);
+                  e.addEventListener("mouseover", function(d) {
+                    return function() {
+                      P !== d && (P = d, Y())
+                    }
+                  }(b), !1);
+                  K.appendChild(e);
+                  U(!0);
+                  N.push(c)
+                }
+              }
+            };
+          }).call(this);
+        })();
+        (function() {
+          function b(a) {
+            for (a = a.target || a.srcElement; a && "A" !== a.nodeName;) a = a.parentElement;
+            a && (a.href || "").match(/\/search.*[?&]tbm=isch/) && (a.href += "&biw=" + document.documentElement.clientWidth, a.href += "&bih=" + document.documentElement.clientHeight)
+          }
+          document.addEventListener("click", b, !1);
+          document.addEventListener("touchStart", b, !1);
+        }).call(this);
+      </script>
+    </div>
+    <!-- cctlcm 5 cctlcm -->
+    <textarea class="csi" name="csi" style="display:none"></textarea>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var e = 'GFpbZKzCBr6P9u8P-vGX0As';
+        var sn = 'web';
+        var timl = false;
+        (function() {
+          function B(a) {
+            if (!a || C(a)) return 0;
+            if (!a.getBoundingClientRect) return 1;
+            var c = function(b) {
+              return b.getBoundingClientRect()
+            };
+            return D(a, c) ? 0 : J(a, c)
+          }
+
+          function D(a, c) {
+            var b;
+            a: {
+              for (b = a; b && null !== b; b = b.parentElement)
+                if ("hidden" === b.style.overflow || "G-EXPANDABLE-CONTENT" === b.tagName && "hidden" === getComputedStyle(b).getPropertyValue("overflow")) break a;b = null
+            }
+            if (!b) return !1;
+            a = c(a);
+            c = c(b);
+            return a.bottom < c.top || a.top >= c.bottom || a.right < c.left || a.left >= c.right
+          }
+
+          function C(a) {
+            return "none" === a.style.display ? !0 : document.defaultView && document.defaultView.getComputedStyle ? (a = document.defaultView.getComputedStyle(a), !!a && ("hidden" === a.visibility || "0px" === a.height && "0px" === a.width)) : !1
+          }
+
+          function J(a, c) {
+            var b = c(a);
+            a = b.left + window.pageXOffset;
+            c = b.top + window.pageYOffset;
+            var f = b.width;
+            b = b.height;
+            var g = 0;
+            if (0 >= b && 0 >= f) return g;
+            var q = window.innerHeight || document.documentElement.clientHeight;
+            0 > c + b ? g = 2 : c >= q && (g = 4);
+            if (0 > a + f || a >= (window.innerWidth || document.documentElement.clientWidth)) g |= 8;
+            g || (g = 1, c + b > q && (g |= 4));
+            return g
+          };
+          var K = e,
+            L = sn,
+            M = "undefined" === typeof de ? !0 : !1 !== de,
+            N = [];
+
+          function O(a, c, b) {
+            a = "/gen_204?atyp=csi&s=" + L + "&t=" + a + ("&lite=1&ei=" + K + "&conn=" + (window.navigator && window.navigator.connection ? window.navigator.connection.type : -1) + c);
+            c = "&rt=";
+            for (var f in b) a += "" + c + f + "." + b[f], c = ",";
+            return a
+          }
+
+          function P(a) {
+            a = {
+              prt: a
+            };
+            window.wsrt && (a.wsrt = window.wsrt);
+            return a
+          }
+
+          function Q(a) {
+            window.ping ? window.ping(a) : (new Image).src = a
+          }
+          (function() {
+            for (var a = (new Date).getTime() - window.start, c = P(a), b = 0, f = 0, g = 0, q = document.getElementsByTagName("img"), r = M ? "&biw=" + window.innerWidth + "&bih=" + window.innerHeight : "", E = function() {
+                r += "&ima=" + g;
+                c.aft = b;
+                Q(O("aft", r, c))
+              }, x = 0, R = function(h, t, u) {
+                var n = h.src;
+                h.onload = function() {
+                  u && n && n === h.src || (f = (new Date).getTime() - window.start, t && ++x === g && (b = f, E()), h.onload = null)
+                }
+              }, S = 0, d = void 0; d = q[S++];) {
+              var v = B(d),
+                p = !!(v & 1);
+              p && ++g;
+              var l = d.hasAttribute("data-ilite"),
+                w = d.hasAttribute("data-deferred"),
+                F = d.hasAttribute("data-src") || d.hasAttribute("data-lzysrc"),
+                y = !w && !l && F;
+              N.push([v, w || l, y, !!(google.ldi && d.id && google.ldi[d.id]) || l && F]);
+              l = (v = d.complete && !w && !(p && y)) && Number(d.getAttribute("data-iml")) || 0;
+              v && l ? (p && ++x, l && (d = l - window.start, p && (b = Math.max(b, d)), f = Math.max(f, d))) : R(d, p, w || y)
+            }
+            b || (b = a);
+            f || (f = b);
+            x === g && E();
+            google.rglh && google.rglh();
+            window.addEventListener("load", function() {
+              window.setTimeout(function() {
+                c.ol = (new Date).getTime() - window.start;
+                timl && (c.iml = f);
+                var h = window.performance && window.performance.timing;
+                h && (c.rqst = h.responseEnd - h.requestStart, c.rspt = h.responseEnd - h.responseStart);
+                for (var t = h = 0, u = 0, n = 0, G = 0, H = 0, T = 0, k; k = N[T++];) {
+                  var m = k[0],
+                    z = k[1],
+                    I = k[2];
+                  k = k[3];
+                  var U = 0 == m,
+                    V = m & 8,
+                    A = m & 1;
+                  m = !A && m & 4;
+                  A && (z && !k || ++u, I && ++H);
+                  z && (A && k && ++h, m && !k && ++t);
+                  U || V ? I || ++G : z || ++n
+                }
+                r += "&ime=" + u + "&imel=" + H + ("&imex=" + n + "&imeh=" + G) + ("&imea=" + h + "&imeb=" + t);
+                Q(O("all", r, c))
+              }, 0)
+            }, !1)
+          })();
+        }).call(this);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      window._setImagesSrc = function(e, f) {
+        function g(b) {
+          b.onerror = function() {
+            b.style.display = "none"
+          };
+          b.setAttribute("data-deferred", "2");
+          b.src = f
+        }
+        for (var c = 0; c < e.length; ++c) {
+          var a = e[c],
+            d = document.getElementById(a) || document.querySelector('img[data-iid="' + a + '"]');
+          d ? (a = void 0, (null == (a = google.c) ? 0 : a.setup) && google.c.setup(d), g(d)) : (google.iir = google.iir || {}, google.iir[a] = f)
+        }
+      };
+      "undefined" === typeof window.google && (window.google = {});
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var s = 'data:image/png;base64,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\x3d';
+        var i = ['dimg_11'];
+        _setImagesSrc(i, s);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var s = 'data:image/png;base64,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\x3d';
+        var i = ['dimg_17'];
+        _setImagesSrc(i, s);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var s = 'data:image/jpeg;base64,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\x3d\x3d';
+        var i = ['dimg_21'];
+        _setImagesSrc(i, s);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var s = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAACACAMAAABDcaubAAAAY1BMVEUAAAD////s7Ozw8PDu7u62trbv7+/AwMCysrLGxsa6urrKysrR0dHi4uJ9fX2EhISKior39/fa2toSEhKZmZmfn5+oqKghISGRkZFtbW11dXVcXFw/Pz9jY2MzMzNHR0caGhq9GitEAAAEAklEQVRYhdWYi5baKhSGA4FsrglQoKid9rz/Ux7ilQQSnS6nq/2dpbj93AOBPxvsursibOhX15BDm/pR09+3aRTeg0d8RzBztu/3cR9D4iZGdnDap5GFlBLeyS6ZCgIzFa1mMmJw4riD17LuLUP9bwdPNd7FTRo36K47jQ8xWrxp0gtp/Zwp5P4JPIGoxZT2jTCkTvQNaelkKy462mutcD/0PekHrfEsknFOcKWednQwPiWQgTkmp0ie4X0PoA+GHc1x0v0j+7CBz43cCT3oa5RgJx3gOv0dJwST++cD9dZ6Wqe/4WRYyObLIu0yRh44cYyyUsIksQhQ5sgD5/2OOc7qeYmTZzipcT0/WXtuqXsbb+EBBZUfwomADi4oCh6YAm/b+ChPkOAIZqKSJvAfURo5saNq4w1T652+IwzqchkQctFexoIs3sAt1TaM0bBwUEg4NsUD85HLLVzRPEyVR8cwUpoCp05LyWv8Mk22OQC7nqYBlF4Kr95rNS/oW3atluIhslVIk2JFLjVolb26CpbrfaHn9lgo26PftcclaWEPawt7kBY+uMIe01TYww01PvCybNtyCpwc1jjRfNsbXJM17tQ2rtz78LwELX4dlyrSSRoasgdfwJWKzFMPUpkv6PsrOMawjUM9q8Tx+UWfH/jSvL7wa/JF9lwD7l4QIcb7G6lJnb30yNoezQVc6GyPWr9pj6p6LOxRVQ/NlqLG0FVI/9nqcSkY51RDfjp78WzCvoXjg5CMTkpSlmTA9uiCExC4UJy1cA+JMXMwAVLwOG/ewJ8ieHHiJ9wsZbru8y3WLjZ514uuQ1D0EtnBsSA4TJCNl3fKUgQTPd/DFaUqyqBY7JFTnOaTRwu/TVM9XUNrmtxqMZH13dqVeC5YC4GPcRV6Uj34y9Vjf+v2KVzY17edVnSVD2ZFpVMjTs3ftSFvKq8r/ubsP5JpKjVOt133sX0b+Gj9/23cNfCGUW9qDeS3cB51j2z+QxHyPck+wSNzY1LjwSCu/OiPbB93SDNuQch8h9GgAb+17y/jZhtvLvORP34Fyee7u/jz47BsTeS2vtQe+T4Kn+H3T/Lfpqf6VuLb1/ymBd4+FxSyS/xaifKEX1ylroe0mdQ1HlAMxgQfmJ9iXg/ep+P0wbxhox/HCKvOcCYZcDCcQ94nSQRKxHyg8AJ7l0vDYJt9v5a0W4l6DKmNW2tdIrPrLBLWCnv7ZhOP4agRNfLkQ/SRTaM3ZgfH855fO8ednsuTkrnRwj85TcCXgipQ4pWk2vu00j9kj7N+TsVPZ8dHc/rZok/b1/zUwP/C6pEXU4zaBpe3W/4VvI+Q7Ze8D+YVPJcNq4ifz/5f0PeGWhfSb+NPq0epsnr8D6aBXJ3n9v8NAAAAAElFTkSuQmCC';
+        var i = ['dimg_23'];
+        _setImagesSrc(i, s);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var s = 'data:image/jpeg;base64,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\x3d';
+        var i = ['dimg_25'];
+        _setImagesSrc(i, s);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var s = 'data:image/png;base64,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';
+        var i = ['dimg_27'];
+        _setImagesSrc(i, s);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var s = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAADFBMVEVMaXFChfRChfRChfT0tCPZAAAAA3RSTlMAgFJEkGxNAAAAL0lEQVR4AWPADxgdwBT3BTDF9AUiuhdC6WNK/v///y+UggrClSA07EWVglmEFwAA5eYSExeCwigAAAAASUVORK5CYII\x3d';
+        var i = ['dimg_29'];
+        _setImagesSrc(i, s);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var s = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\x3d';
+        var i = ['dimg_1', 'dimg_3', 'dimg_5', 'dimg_7', 'dimg_9', 'dimg_13', 'dimg_15', 'dimg_19'];
+        _setImagesSrc(i, s);
+      })();
+    </script>
+    <script nonce="-OvuQ2NN5vKGwp-o8HxIZQ">
+      (function() {
+        var e = 'GFpbZKzCBr6P9u8P-vGX0As';
+        (function() {
+          var a = e;
+          2 === (window.performance && window.performance.navigation && window.performance.navigation.type) && window.ping("/gen_204?ct=backbutton&ei=" + a);
+        }).call(this);
+      })();
+      (function() {
+        var b = [function() {
+          google.tick && google.tick("load", "dcl")
+        }];
+        google.dclc = function(a) {
+          b.length ? b.push(a) : a()
+        };
+
+        function c() {
+          for (var a = b.shift(); a;) a(), a = b.shift()
+        }
+        window.addEventListener ? (document.addEventListener("DOMContentLoaded", c, !1), window.addEventListener("load", c, !1)) : window.attachEvent && window.attachEvent("onload", c);
+      }).call(this);
+      window.jsl = window.jsl || {};
+      window.jsl.dh = function(a, b, f) {
+        try {
+          var g = document.getElementById(a);
+          if (g) g.innerHTML = b, f && f();
+          else {
+            var c = {
+              id: a,
+              script: String(!!f),
+              milestone: String(google.jslm || 0)
+            };
+            google.jsla && (c.async = google.jsla);
+            var h = a.indexOf("_"),
+              d = 0 < h ? a.substring(0, h) : "",
+              k = document.createElement("div");
+            k.innerHTML = b;
+            var e = k.children[0];
+            if (e && (c.tag = e.tagName, c["class"] = String(e.className || null), c.name = String(e.getAttribute("jsname")), d)) {
+              a = [];
+              var l = document.querySelectorAll('[id^="' + d + '_"]');
+              for (b = 0; b < l.length; ++b) a.push(l[b].id);
+              c.ids = a.join(",")
+            }
+            google.ml(Error(d ? "Missing ID with prefix " + d : "Missing ID"), !1, c)
+          }
+        } catch (m) {
+          google.ml(m, !0, {
+            "jsl.dh": !0
+          })
+        }
+      };
+      (function() {
+        var x = false;
+        google.jslm = x ? 2 : 1;
+      })();
+      (function() {
+        (function() {
+          google.csct = {};
+          google.csct.ps = 'AOvVaw1lphbxOybKJs2Hcw8YAtbz\x26ust\x3d1683794840154307';
+        })();
+      })();
+      (function() {
+        (function() {
+          google.csct.rd = true;
+        })();
+      })();
+      (function() {
+        (function() {
+          google.csct.rl = true;
+        })();
+      })();
+      (function() {
+        (function() {
+          window.logVe = function(a) {
+            a && a.attributes["data-ved"] && window.ping("/gen_204?ved=" + a.attributes["data-ved"].value)
+          };
+        }).call(this);
+      })();
+      (function() {
+        window.xp = function(b) {
+          function f(k, g, h) {
+            return "xp" + ("x" == g ? "c" : "x") + h
+          }
+          for (var c = /\bxp(x|c)(\d?)\b/, a = b; a;) {
+            var e = a.className,
+              d = e.match(c);
+            if (d) {
+              d = "c" == d[1];
+              a.className = e.replace(c, f);
+              b && b.setAttribute("aria-expanded", d);
+              if (d)
+                for (b = a.getElementsByTagName("img"), c = 0; c < b.length; ++c)
+                  if (a = b[c], e = a.getAttribute("data-ll")) a.src = e, a.removeAttribute("data-ll");
+              break
+            }
+            a = a.parentElement
+          }
+        };
+      })();
+      (function() {
+        (function() {
+          window.logVe = function(a) {
+            a && a.attributes["data-ved"] && window.ping("/gen_204?ved=" + a.attributes["data-ved"].value)
+          };
+        }).call(this);
+      })();
+      (function() {
+        (function() {
+          var id = 'tsuid_1';
+          var lve = true;
+          (function() {
+            var e = "undefined" != typeof navigator && !/Opera/.test(navigator.userAgent) && /WebKit/.test(navigator.userAgent),
+              f = {
+                A: 1,
+                INPUT: 1,
+                TEXTAREA: 1,
+                SELECT: 1,
+                BUTTON: 1
+              },
+              g = {
+                Enter: 13,
+                " ": 32
+              },
+              h = {
+                A: 13,
+                BUTTON: 0,
+                CHECKBOX: 32,
+                COMBOBOX: 13,
+                FILE: 0,
+                GRIDCELL: 13,
+                LINK: 13,
+                LISTBOX: 13,
+                MENU: 0,
+                MENUBAR: 0,
+                MENUITEM: 0,
+                MENUITEMCHECKBOX: 0,
+                MENUITEMRADIO: 0,
+                OPTION: 0,
+                RADIO: 32,
+                RADIOGROUP: 32,
+                RESET: 0,
+                SUBMIT: 0,
+                SWITCH: 32,
+                TAB: 0,
+                TREE: 13,
+                TREEITEM: 13
+              },
+              k = {
+                CHECKBOX: !0,
+                FILE: !0,
+                OPTION: !0,
+                RADIO: !0
+              },
+              l = {
+                COLOR: !0,
+                DATE: !0,
+                DATETIME: !0,
+                "DATETIME-LOCAL": !0,
+                EMAIL: !0,
+                MONTH: !0,
+                NUMBER: !0,
+                PASSWORD: !0,
+                RANGE: !0,
+                SEARCH: !0,
+                TEL: !0,
+                TEXT: !0,
+                TEXTAREA: !0,
+                TIME: !0,
+                URL: !0,
+                WEEK: !0
+              };
+            document.getElementById(id).onclick = function() {
+              window.xp(this);
+              lve && window.logVe(this)
+            };
+            document.getElementById(id).onkeydown = function(d) {
+              var c = d.which || d.keyCode;
+              !c && d.key && (c = g[d.key]);
+              e && 3 == c && (c = 13);
+              if (13 != c && 32 != c) c = !1;
+              else {
+                var a = d.target || d.srcElement;
+                !a.getAttribute && a.parentNode && (a = a.parentNode);
+                var b;
+                if (!(b = "keydown" != d.type)) {
+                  if (b = "getAttribute" in a) b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+                  b = !(b && !("BUTTON" == a.tagName.toUpperCase() || a.type && "FILE" == a.type.toUpperCase()) && !a.isContentEditable)
+                }(b = b || d.ctrlKey || d.shiftKey || d.altKey || d.metaKey || (a.getAttribute("type") || a.tagName).toUpperCase() in k && 32 == c) || ((b = a.tagName in f) || (b = a.getAttributeNode("tabindex"), b = null != b && b.specified), b = !(b && !a.disabled));
+                if (b) c = !1;
+                else {
+                  b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+                  var m = !(b in h) && 13 == c;
+                  a = "INPUT" != a.tagName.toUpperCase() || !!a.type;
+                  c = (0 == h[b] % c || m) && a
+                }
+              }
+              c && (d.preventDefault(), window.xp(this), lve && window.logVe(this))
+            };
+          }).call(this);
+        })();
+      })();
+      (function() {
+        window.jsl = window.jsl || {};
+        window.jsl.dh = window.jsl.dh || function(i, c, d) {
+          try {
+            var e = document.getElementById(i);
+            if (e) {
+              e.innerHTML = c;
+              if (d) {
+                d();
+              }
+            } else {
+              if (window.jsl.el) {
+                window.jsl.el(new Error('Missing ID.'), {
+                  'id': i
+                });
+              }
+            }
+          } catch (e) {
+            if (window.jsl.el) {
+              window.jsl.el(new Error('jsl.dh'));
+            }
+          }
+        };
+      })();
+      (function() {
+        window.jsl.dh('accdef_1', '\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eParsing, which is \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3ethe process of identifying tokens within a data instance and looking for recognizable patterns\x3c/span\x3e. The parsing process segregates each word, attempts to determine the relationship between the word and previously defined token sets, and then forms patterns from sequences of tokens.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.sciencedirect.com/topics/computer-science/parsing-process\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAcQBg\x26amp;usg\x3dAOvVaw2OZB-HwvmynPCt7w0HEJCY\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eParsing Process - an overview | ScienceDirect Topics\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3ewww.sciencedirect.com \u203a topics \u203a computer-science \u203a parsing-process\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?ie\x3dUTF-8\x26amp;ei\x3dGFpbZKzCBr6P9u8P-vGX0As\x26amp;q\x3dWhat+is+the+process+of+parsing?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQzmd6BAgHEAc\x22\x3e\u0411\u0456\u043b\u044c\u0448\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');
+      })();
+      (function() {
+        (function() {
+          var id = 'tsuid_2';
+          var lve = true;
+          (function() {
+            var e = "undefined" != typeof navigator && !/Opera/.test(navigator.userAgent) && /WebKit/.test(navigator.userAgent),
+              f = {
+                A: 1,
+                INPUT: 1,
+                TEXTAREA: 1,
+                SELECT: 1,
+                BUTTON: 1
+              },
+              g = {
+                Enter: 13,
+                " ": 32
+              },
+              h = {
+                A: 13,
+                BUTTON: 0,
+                CHECKBOX: 32,
+                COMBOBOX: 13,
+                FILE: 0,
+                GRIDCELL: 13,
+                LINK: 13,
+                LISTBOX: 13,
+                MENU: 0,
+                MENUBAR: 0,
+                MENUITEM: 0,
+                MENUITEMCHECKBOX: 0,
+                MENUITEMRADIO: 0,
+                OPTION: 0,
+                RADIO: 32,
+                RADIOGROUP: 32,
+                RESET: 0,
+                SUBMIT: 0,
+                SWITCH: 32,
+                TAB: 0,
+                TREE: 13,
+                TREEITEM: 13
+              },
+              k = {
+                CHECKBOX: !0,
+                FILE: !0,
+                OPTION: !0,
+                RADIO: !0
+              },
+              l = {
+                COLOR: !0,
+                DATE: !0,
+                DATETIME: !0,
+                "DATETIME-LOCAL": !0,
+                EMAIL: !0,
+                MONTH: !0,
+                NUMBER: !0,
+                PASSWORD: !0,
+                RANGE: !0,
+                SEARCH: !0,
+                TEL: !0,
+                TEXT: !0,
+                TEXTAREA: !0,
+                TIME: !0,
+                URL: !0,
+                WEEK: !0
+              };
+            document.getElementById(id).onclick = function() {
+              window.xp(this);
+              lve && window.logVe(this)
+            };
+            document.getElementById(id).onkeydown = function(d) {
+              var c = d.which || d.keyCode;
+              !c && d.key && (c = g[d.key]);
+              e && 3 == c && (c = 13);
+              if (13 != c && 32 != c) c = !1;
+              else {
+                var a = d.target || d.srcElement;
+                !a.getAttribute && a.parentNode && (a = a.parentNode);
+                var b;
+                if (!(b = "keydown" != d.type)) {
+                  if (b = "getAttribute" in a) b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+                  b = !(b && !("BUTTON" == a.tagName.toUpperCase() || a.type && "FILE" == a.type.toUpperCase()) && !a.isContentEditable)
+                }(b = b || d.ctrlKey || d.shiftKey || d.altKey || d.metaKey || (a.getAttribute("type") || a.tagName).toUpperCase() in k && 32 == c) || ((b = a.tagName in f) || (b = a.getAttributeNode("tabindex"), b = null != b && b.specified), b = !(b && !a.disabled));
+                if (b) c = !1;
+                else {
+                  b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+                  var m = !(b in h) && 13 == c;
+                  a = "INPUT" != a.tagName.toUpperCase() || !!a.type;
+                  c = (0 == h[b] % c || m) && a
+                }
+              }
+              c && (d.preventDefault(), window.xp(this), lve && window.logVe(this))
+            };
+          }).call(this);
+        })();
+      })();
+      (function() {
+        window.jsl.dh('accdef_3', '\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eDepending upon how the parse tree is built, parsing techniques are classified into three general categories, namely, \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3euniversal parsing, top-down parsing, and bottom-up parsing\x3c/span\x3e. The most commonly used parsing techniques are top-down parsing and bottom-up parsing.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.oreilly.com/library/view/express-learning-principles/9788131761267/chap004.xhtml\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAcQDQ\x26amp;usg\x3dAOvVaw2Dbs2tXt0No54isCq9dTX7\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3e4. Basic Parsing Techniques - Express Learning: Principles of Compiler ...\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3ewww.oreilly.com \u203a library \u203a view \u203a express-learning-principles \u203a chap004\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?ie\x3dUTF-8\x26amp;ei\x3dGFpbZKzCBr6P9u8P-vGX0As\x26amp;q\x3dWhat+are+the+methods+of+parsing?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQzmd6BAgHEA4\x22\x3e\u0411\u0456\u043b\u044c\u0448\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');
+      })();
+      (function() {
+        (function() {
+          var id = 'tsuid_3';
+          var lve = true;
+          (function() {
+            var e = "undefined" != typeof navigator && !/Opera/.test(navigator.userAgent) && /WebKit/.test(navigator.userAgent),
+              f = {
+                A: 1,
+                INPUT: 1,
+                TEXTAREA: 1,
+                SELECT: 1,
+                BUTTON: 1
+              },
+              g = {
+                Enter: 13,
+                " ": 32
+              },
+              h = {
+                A: 13,
+                BUTTON: 0,
+                CHECKBOX: 32,
+                COMBOBOX: 13,
+                FILE: 0,
+                GRIDCELL: 13,
+                LINK: 13,
+                LISTBOX: 13,
+                MENU: 0,
+                MENUBAR: 0,
+                MENUITEM: 0,
+                MENUITEMCHECKBOX: 0,
+                MENUITEMRADIO: 0,
+                OPTION: 0,
+                RADIO: 32,
+                RADIOGROUP: 32,
+                RESET: 0,
+                SUBMIT: 0,
+                SWITCH: 32,
+                TAB: 0,
+                TREE: 13,
+                TREEITEM: 13
+              },
+              k = {
+                CHECKBOX: !0,
+                FILE: !0,
+                OPTION: !0,
+                RADIO: !0
+              },
+              l = {
+                COLOR: !0,
+                DATE: !0,
+                DATETIME: !0,
+                "DATETIME-LOCAL": !0,
+                EMAIL: !0,
+                MONTH: !0,
+                NUMBER: !0,
+                PASSWORD: !0,
+                RANGE: !0,
+                SEARCH: !0,
+                TEL: !0,
+                TEXT: !0,
+                TEXTAREA: !0,
+                TIME: !0,
+                URL: !0,
+                WEEK: !0
+              };
+            document.getElementById(id).onclick = function() {
+              window.xp(this);
+              lve && window.logVe(this)
+            };
+            document.getElementById(id).onkeydown = function(d) {
+              var c = d.which || d.keyCode;
+              !c && d.key && (c = g[d.key]);
+              e && 3 == c && (c = 13);
+              if (13 != c && 32 != c) c = !1;
+              else {
+                var a = d.target || d.srcElement;
+                !a.getAttribute && a.parentNode && (a = a.parentNode);
+                var b;
+                if (!(b = "keydown" != d.type)) {
+                  if (b = "getAttribute" in a) b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+                  b = !(b && !("BUTTON" == a.tagName.toUpperCase() || a.type && "FILE" == a.type.toUpperCase()) && !a.isContentEditable)
+                }(b = b || d.ctrlKey || d.shiftKey || d.altKey || d.metaKey || (a.getAttribute("type") || a.tagName).toUpperCase() in k && 32 == c) || ((b = a.tagName in f) || (b = a.getAttributeNode("tabindex"), b = null != b && b.specified), b = !(b && !a.disabled));
+                if (b) c = !1;
+                else {
+                  b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+                  var m = !(b in h) && 13 == c;
+                  a = "INPUT" != a.tagName.toUpperCase() || !!a.type;
+                  c = (0 == h[b] % c || m) && a
+                }
+              }
+              c && (d.preventDefault(), window.xp(this), lve && window.logVe(this))
+            };
+          }).call(this);
+        })();
+      })();
+      (function() {
+        window.jsl.dh('accdef_5', '\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv class\x3d\x22q4vBJc\x22\x3e\x3c/div\x3e\x3cspan\x3e\x3ch2 class\x3d\x22zBAuLc l97dzf\x22\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e\x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3eHow to write a parser\x3c/span\x3e\x3c/div\x3e\x3c/h2\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv class\x3d\x22pkr8ib\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e1\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eSetup and get started.\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv class\x3d\x22pkr8ib\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e2\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eWrite a lexer.\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv class\x3d\x22pkr8ib\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e3\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eDefine structures.\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv class\x3d\x22pkr8ib\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e4\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eUse the parsed output.\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv class\x3d\x22pkr8ib\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e5\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eExtend the parser (in theory)\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv class\x3d\x22pkr8ib\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e6\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eExtend the parser (in practice)\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe uEec3 AP7Wnd\x22\x3e\x3cspan class\x3d\x22BNeawe\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://prettydiff.com/2/guide/unrelated_parser.xhtml\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAcQFA\x26amp;usg\x3dAOvVaw0miDqXF4kRtBgVLRvxN5hm\x22\x3e\x3cspan class\x3d\x22uEec3 AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eGuide: How to write a parser - Pretty Diff\x3c/span\x3e\x3c/span\x3e\x3c/a\x3e\x3c/span\x3e\n\x3cspan class\x3d\x22BNeawe\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://prettydiff.com/2/guide/unrelated_parser.xhtml\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQlqUEegQIBxAV\x26amp;usg\x3dAOvVaw1YouxAFOm0c-SRs1RiYyoX\x22\x3e\x3cspan class\x3d\x22uEec3 AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod aJyiOc\x22\x3eprettydiff.com \u203a guide \u203a unrelated_parser\x3c/span\x3e\x3c/span\x3e\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?ie\x3dUTF-8\x26amp;ei\x3dGFpbZKzCBr6P9u8P-vGX0As\x26amp;q\x3dHow+do+you+make+a+parsing?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQzmd6BAgHEBY\x22\x3e\u0411\u0456\u043b\u044c\u0448\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');
+      })();
+      (function() {
+        (function() {
+          var id = 'tsuid_4';
+          var lve = true;
+          (function() {
+            var e = "undefined" != typeof navigator && !/Opera/.test(navigator.userAgent) && /WebKit/.test(navigator.userAgent),
+              f = {
+                A: 1,
+                INPUT: 1,
+                TEXTAREA: 1,
+                SELECT: 1,
+                BUTTON: 1
+              },
+              g = {
+                Enter: 13,
+                " ": 32
+              },
+              h = {
+                A: 13,
+                BUTTON: 0,
+                CHECKBOX: 32,
+                COMBOBOX: 13,
+                FILE: 0,
+                GRIDCELL: 13,
+                LINK: 13,
+                LISTBOX: 13,
+                MENU: 0,
+                MENUBAR: 0,
+                MENUITEM: 0,
+                MENUITEMCHECKBOX: 0,
+                MENUITEMRADIO: 0,
+                OPTION: 0,
+                RADIO: 32,
+                RADIOGROUP: 32,
+                RESET: 0,
+                SUBMIT: 0,
+                SWITCH: 32,
+                TAB: 0,
+                TREE: 13,
+                TREEITEM: 13
+              },
+              k = {
+                CHECKBOX: !0,
+                FILE: !0,
+                OPTION: !0,
+                RADIO: !0
+              },
+              l = {
+                COLOR: !0,
+                DATE: !0,
+                DATETIME: !0,
+                "DATETIME-LOCAL": !0,
+                EMAIL: !0,
+                MONTH: !0,
+                NUMBER: !0,
+                PASSWORD: !0,
+                RANGE: !0,
+                SEARCH: !0,
+                TEL: !0,
+                TEXT: !0,
+                TEXTAREA: !0,
+                TIME: !0,
+                URL: !0,
+                WEEK: !0
+              };
+            document.getElementById(id).onclick = function() {
+              window.xp(this);
+              lve && window.logVe(this)
+            };
+            document.getElementById(id).onkeydown = function(d) {
+              var c = d.which || d.keyCode;
+              !c && d.key && (c = g[d.key]);
+              e && 3 == c && (c = 13);
+              if (13 != c && 32 != c) c = !1;
+              else {
+                var a = d.target || d.srcElement;
+                !a.getAttribute && a.parentNode && (a = a.parentNode);
+                var b;
+                if (!(b = "keydown" != d.type)) {
+                  if (b = "getAttribute" in a) b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+                  b = !(b && !("BUTTON" == a.tagName.toUpperCase() || a.type && "FILE" == a.type.toUpperCase()) && !a.isContentEditable)
+                }(b = b || d.ctrlKey || d.shiftKey || d.altKey || d.metaKey || (a.getAttribute("type") || a.tagName).toUpperCase() in k && 32 == c) || ((b = a.tagName in f) || (b = a.getAttributeNode("tabindex"), b = null != b && b.specified), b = !(b && !a.disabled));
+                if (b) c = !1;
+                else {
+                  b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+                  var m = !(b in h) && 13 == c;
+                  a = "INPUT" != a.tagName.toUpperCase() || !!a.type;
+                  c = (0 == h[b] % c || m) && a
+                }
+              }
+              c && (d.preventDefault(), window.xp(this), lve && window.logVe(this))
+            };
+          }).call(this);
+        })();
+      })();
+      (function() {
+        window.jsl.dh('accdef_7', '\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eParsing, syntax analysis, or syntactic analysis is \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3ethe process of analyzing a string of symbols, either in natural language, computer languages or data structures, conforming to the rules of a formal grammar\x3c/span\x3e.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://en.wikipedia.org/wiki/Parsing\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAcQHA\x26amp;usg\x3dAOvVaw0_KEBVFlFeLUIJCkpw0_zZ\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eParsing - Wikipedia\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3een.wikipedia.org \u203a wiki \u203a Parsing\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?ie\x3dUTF-8\x26amp;ei\x3dGFpbZKzCBr6P9u8P-vGX0As\x26amp;q\x3dWhat+is+parsing+and+how+does+it+work?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQzmd6BAgHEB0\x22\x3e\u0411\u0456\u043b\u044c\u0448\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');
+      })();
+      (function() {
+        (function() {
+          var id = 'tsuid_5';
+          var lve = true;
+          (function() {
+            var e = "undefined" != typeof navigator && !/Opera/.test(navigator.userAgent) && /WebKit/.test(navigator.userAgent),
+              f = {
+                A: 1,
+                INPUT: 1,
+                TEXTAREA: 1,
+                SELECT: 1,
+                BUTTON: 1
+              },
+              g = {
+                Enter: 13,
+                " ": 32
+              },
+              h = {
+                A: 13,
+                BUTTON: 0,
+                CHECKBOX: 32,
+                COMBOBOX: 13,
+                FILE: 0,
+                GRIDCELL: 13,
+                LINK: 13,
+                LISTBOX: 13,
+                MENU: 0,
+                MENUBAR: 0,
+                MENUITEM: 0,
+                MENUITEMCHECKBOX: 0,
+                MENUITEMRADIO: 0,
+                OPTION: 0,
+                RADIO: 32,
+                RADIOGROUP: 32,
+                RESET: 0,
+                SUBMIT: 0,
+                SWITCH: 32,
+                TAB: 0,
+                TREE: 13,
+                TREEITEM: 13
+              },
+              k = {
+                CHECKBOX: !0,
+                FILE: !0,
+                OPTION: !0,
+                RADIO: !0
+              },
+              l = {
+                COLOR: !0,
+                DATE: !0,
+                DATETIME: !0,
+                "DATETIME-LOCAL": !0,
+                EMAIL: !0,
+                MONTH: !0,
+                NUMBER: !0,
+                PASSWORD: !0,
+                RANGE: !0,
+                SEARCH: !0,
+                TEL: !0,
+                TEXT: !0,
+                TEXTAREA: !0,
+                TIME: !0,
+                URL: !0,
+                WEEK: !0
+              };
+            document.getElementById(id).onclick = function() {
+              window.xp(this);
+              lve && window.logVe(this)
+            };
+            document.getElementById(id).onkeydown = function(d) {
+              var c = d.which || d.keyCode;
+              !c && d.key && (c = g[d.key]);
+              e && 3 == c && (c = 13);
+              if (13 != c && 32 != c) c = !1;
+              else {
+                var a = d.target || d.srcElement;
+                !a.getAttribute && a.parentNode && (a = a.parentNode);
+                var b;
+                if (!(b = "keydown" != d.type)) {
+                  if (b = "getAttribute" in a) b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+                  b = !(b && !("BUTTON" == a.tagName.toUpperCase() || a.type && "FILE" == a.type.toUpperCase()) && !a.isContentEditable)
+                }(b = b || d.ctrlKey || d.shiftKey || d.altKey || d.metaKey || (a.getAttribute("type") || a.tagName).toUpperCase() in k && 32 == c) || ((b = a.tagName in f) || (b = a.getAttributeNode("tabindex"), b = null != b && b.specified), b = !(b && !a.disabled));
+                if (b) c = !1;
+                else {
+                  b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+                  var m = !(b in h) && 13 == c;
+                  a = "INPUT" != a.tagName.toUpperCase() || !!a.type;
+                  c = (0 == h[b] % c || m) && a
+                }
+              }
+              c && (d.preventDefault(), window.xp(this), lve && window.logVe(this))
+            };
+          }).call(this);
+        })();
+      })();
+      (function() {
+        window.jsl.dh('accdef_9', '\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eIt generates the Parse Tree from root to leaves. In top-down parsing, the parsin begins from the start symbol and changes it into the input symbol. An example of a Top-Down Parser is \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3ePredictive Parsers, Recursive Descent Parser\x3c/span\x3e.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.tutorialspoint.com/what-are-parsing-techniques-in-compiler-design\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQFnoECAcQIw\x26amp;usg\x3dAOvVaw3fCw9bovnpUtlDTGWEmQ9C\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eWhat are Parsing Techniques in Compiler Design - Tutorialspoint\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3ewww.tutorialspoint.com \u203a what-are-parsing-techniques-in-compiler-design\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?ie\x3dUTF-8\x26amp;ei\x3dGFpbZKzCBr6P9u8P-vGX0As\x26amp;q\x3dWhat+is+parsing+technique+with+example?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwisrunbrur-AhW-h_0HHfr4BboQzmd6BAgHECQ\x22\x3e\u0411\u0456\u043b\u044c\u0448\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');
+      })();
+      google.drty && google.drty(undefined, true);
+    </script>
+  </body>
+</html>
