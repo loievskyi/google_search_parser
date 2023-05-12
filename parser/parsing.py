@@ -106,10 +106,31 @@ class DownloadSearchDataParsingStep(SimpleParsingStep):
         for position, block_html in enumerate(data_divs, start=start_position):
             if position > 100:
                 break
+            yield SaveDataStep(
+                self.get_result_data(block_html=block_html, position=position)
+            )
+
+        if position < 100:
+            next_page_url = self.get_next_page_url(soup)
+            if next_page_url:
+                yield DownloadSearchDataParsingStep({
+                    "url": next_page_url,
+                    "start_position": position+1,
+                })
 
 
+class SaveDataStep(SimpleParsingStep):
+    def parse(self, input_data):
+        """
+        input_data is json with result
+        """
+        # you can save data here into db, return as response,
+        # save into file or something else.
+        # For now - it's a plug
+        print(f"{json.dumps(input_data, indent=4)}")
 
 
 if __name__ == "__main__":
     search_request = input("enter search request: ")
     CreateSearchUrlParsingStep(input_data=search_request).perform()
+    # CreateSearchUrlParsingStep(input_data="parsing_steps").perform()
