@@ -1,12 +1,28 @@
 import requests
 import json
 import time
+import re
 
+import unicodedata
 import html
 from parsing_steps.simple import SimpleParsingStep
 import bs4
 
 session = requests.Session()
+
+
+def normalize(text):
+    try:
+        if text is None:
+            return text
+        if isinstance(text, str):
+            text = (unicodedata.normalize("NFKD", text)
+                               .encode("ascii", "ignore")
+                               .decode())
+            return re.sub(" +", " ", text)
+        raise ValueError("The input text is not a str instance")
+    except Exception:
+        return text
 
 
 class CreateSearchUrlParsingStep(SimpleParsingStep):
@@ -39,7 +55,7 @@ class DownloadSearchDataParsingStep(SimpleParsingStep):
         data = dict()
 
         try:
-            data["title"] = block_html.find("h3").get_text()
+            data["title"] = normalize(block_html.find("h3").get_text())
         except Exception:
             pass
 
@@ -49,9 +65,15 @@ class DownloadSearchDataParsingStep(SimpleParsingStep):
             pass
 
         try:
-            data["description"] = block_html.find(
-                "div", class_="kCrYT").next().find("div", class_="sCuL3").get_text()
-        except:
+            description = block_html.find(
+                "div", class_="BNeawe s3v9rd AP7Wnd")
+            text_from_extended_description = description.find(class_="v9i61e")
+            if text_from_extended_description:
+                data["description"] = text_from_extended_description.get_text()
+            else:
+                data["description"] = description.get_text()
+            data["description"] = normalize(data["description"])
+        except Exception:
             pass
 
         data["position"] = position
