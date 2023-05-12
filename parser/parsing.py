@@ -60,8 +60,10 @@ class DownloadSearchDataParsingStep(SimpleParsingStep):
             pass
 
         try:
-            data["url"] = block_html.find("a").get("href", None)
-        except:
+            page_url = block_html.find("a").get("href", None)
+            page_url = page_url.split("/url?q=")[-1].split("&")[0]
+            data["url"] = page_url
+        except Exception:
             pass
 
         try:
