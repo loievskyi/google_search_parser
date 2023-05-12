@@ -83,10 +83,11 @@ class DownloadSearchDataParsingStep(SimpleParsingStep):
 
     def get_next_page_url(self, page_element):
         try:
-            return "https://google.com" + page_element.find(class_="nBDE1b G5eFlf").get("href", None)
-        except:
+            for arrow_element in page_element.find_all(class_="nBDE1b G5eFlf"):
+                if ">" in arrow_element.get_text():
+                    return "https://google.com" + arrow_element.get("href", None)
+        except Exception:
             pass
-
 
     def parse(self, input_data):
         """
